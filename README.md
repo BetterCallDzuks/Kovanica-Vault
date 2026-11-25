@@ -10,7 +10,7 @@ Interactive **Obsidian Vault** presentation of the **Kovanica Protocol (KVNC)** 
   2. **`Kovanica Business & Revenue Map.canvas`** — Maps all 6 non-token revenue streams into live `POST /api/inquiries` intake.
   3. **`Kovanica Mainnet 1.1.2027 Roadmap.canvas`** — 5-phase visual launch timeline from Core L1 to Mainnet T0 (`1.1.2027`).
 - **`Kovanica Pitch Deck (Slides).md`** — 12-slide native Obsidian presentation deck (`Ctrl+P` → `Slides: Start presentation`) with embedded custom SVG banner and emission curve.
-- **15 Interconnected Deep-Dive Notes** — Covering Consensus, Frozen Tokenomics (`assets/emission-curve.svg`), PRO-21 & Post-Quantum Crypto, Wave A–D, AMM & KVP-106 RWA, 5-Repo Architecture, 5-Tab Web IA, Client Apps, SDK/Playground, Mining Pool, Revenue Model, Audit/Security, Competitive Positioning, Developer RPC Cookbook, and Visual Brand System.
+- **16 Interconnected Deep-Dive Notes** — Covering Consensus, Frozen Tokenomics (`assets/emission-curve.svg`), PRO-21 & Post-Quantum Crypto, Wave A–D, AMM & KVP-106 RWA, 5-Repo Architecture, 5-Tab Web IA, Client Apps, SDK/Playground, Mining Pool, Revenue Model, Audit/Security, Competitive Positioning, Developer RPC Cookbook, Visual Brand System, and the **KVP & RFC Standards Registry (`KVP-20`, `KVP-101`..`KVP-106`, `RFC-001`..`RFC-008`)**.
 - **Pre-Configured Color Bubble Graph (`.obsidian/graph.json`)** — Press `Ctrl+G` in Obsidian for a color-coded constellation across all linked notes.
 - **Custom Kovanica CSS Theme (`.obsidian/snippets/kovanica-theme.css`)** — Fraunces editorial headings, KPI cards, color swatches, styled tables, callouts, canvas shadows, and slide polish.
 

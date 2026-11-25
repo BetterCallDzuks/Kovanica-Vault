@@ -79,8 +79,9 @@ sdk_version: 0.9.0
     </ul>
   </div>
   <div class="kovanica-card">
-    <h3>4 · Strategy, Cookbook & Brand</h3>
+    <h3>4 · Strategy, Standards & Brand</h3>
     <ul>
+      <li>[[16 - KVP & RFC Standards Registry]] — KVP-20, KVP-101..106 & RFC-001..008</li>
       <li>[[13 - Competitive Positioning (PoW vs PoS vs DAG)]] — PoW vs PoS vs DAG matrix</li>
       <li>[[14 - Developer Quickstart & RPC Cookbook]] — Live curl, SDK & Stratum commands</li>
       <li>[[15 - Visual Brand & Design System]] — Color swatches & typography DNA</li>

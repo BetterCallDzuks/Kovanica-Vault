@@ -62,13 +62,12 @@ tags:
 
 ---
 
-## 6. Native DeFi & KVP-106 RWA
+## 6. KVP Standards, DeFi & KVP-106 RWA
 
-- **Native AMM DEX (`/swap`, `/pools`):**
-  - Constant-product `x·y=k` swaps, 1-tx Wave A liquidity batches, and on-chain KVP-102 quote calculator.
-- **Institutional RWA (`/rwa`, `/wallet/rwa-issue`, `/wallet/rwa-manage`):**
-  - Deterministic BLAKE3 asset derivation (`kvp106:rwa:v1`).
-  - Built-in allowlists, freeze controls, and automated coupon/dividend scheduling.
+- **`KVP-101`..`KVP-106` & `KVP-20`** (see [[16 - KVP & RFC Standards Registry]]):
+  - `KVP-101` Multisig · `KVP-102` Multi-Asset Tokens · `KVP-103` Stealth · `KVP-104` HTLC · `KVP-105` Vaults · `KVP-106` RWA & NFTs · `KVP-20` Fungible DEX pairs.
+- **Native AMM DEX (`/swap`, `/pools`):** `x·y=k` swaps, 1-tx Wave A liquidity batches & KVP-102 quote calculator.
+- **Institutional RWA (`/rwa`, `/wallet/rwa-issue`, `/wallet/rwa-manage`):** Deterministic BLAKE3 `kvp106:rwa:v1`, allowlists, freeze & coupon scheduling.
 
 ---
 
