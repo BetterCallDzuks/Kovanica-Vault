@@ -15,7 +15,10 @@ Back to [[00 - Kovanica Protocol MOC]]
 | App | Platform / Stack | Key Capabilities |
 | :--- | :--- | :--- |
 | **`wallet-web`** | React / TanStack Start + `kovanica-sdk v0.9.0` | Multi-endpoint RPC failover, finality watcher, 3-sub-tab Contracts workspace (7 typed facades + batch + logs/multisig), air-gap `kvnc-tx:v1:` envelopes, chain-aware explorer links |
-| **`browser-extension`** | Chrome / Brave / Firefox **MV3** | Non-custodial popup wallet + **`window.kovanica`** dApp provider, Wave A `signBatchTransaction` approval modal, Chrome/Firefox store zip packager |
+| **`browser-extension`** | Chrome / Brave / Firefox **MV3** | Non-custodial popup wallet + **`window.kovanica`** dApp provider, Wave A `signBatchTransaction` approval modal, dual Chrome (`manifest.json`) & Firefox (`manifest.firefox.json`, `wallet@kovanica.online`) MV3 builds, deterministic `.zip` packagers (`package:chrome`, `package:firefox`, `package:firefox-source`) & complete Chrome Web Store / Firefox AMO submission kit (`store-assets/` listings, privacy policy, verified brand PNGs) |
+
+> [!TIP] Store Submission Readiness (Merged in `kovanica-apps#27`)
+> `browser-extension/store-assets/` ships review-ready **Chrome Web Store** & **Firefox AMO** copy, zero-telemetry `PRIVACY_POLICY.md`, step-by-step `SUBMISSION_CHECKLIST.md`, verified PNG icons (`16/32/48/128`), `440x280` promo tile, and `1280x800` screenshots — plus reproducible `.zip` + `.sha256` bundles.
 | **`console-desktop`** | Tauri + React | Operator node inspector, single-POST batch RPC health probe, cluster readiness aggregator |
 | **`node-desktop`** | Tauri (Linux `.deb`) | External `kovanica-node` supervisor, Stratum & faucet alarms, snapshot verifier |
 | **`desktop`** | Tauri | E2E encrypted Comms shell |

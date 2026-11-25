@@ -25,6 +25,15 @@ Back to [[00 - Kovanica Protocol MOC]]
 - **Zero Mainnet/Testnet Leakage:** Mainnet pre-launch endpoints return explicit `503` (reads) / `403` (mutations) — never silently falling back to testnet data.
 - **Zero Secret Leakage & CSP Hardening:** Per-request CSP nonces, HSTS, `X-Frame-Options: DENY`, strict `https://` URL sanitization on all sponsor/partner configs, and zero committed `.env` or keystore files.
 
+## Pre-Mainnet `1.1.2027` Live Infrastructure Audit (`2026-11-25`, `kovanica-web#40`)
+
+Full live audit & 3-node dress rehearsal runbook lives in `kovanica-web/docs/pre-mainnet-2027-infra-prep.md`:
+
+- **Edge TLS SAN Gap (`mainnet.kovanica.online`):** Currently HTTP-only in Nginx, causing HTTPS to fall back to `dash.kovanica.online` (`curl (60)`). Requires Certbot cert + `443 ssl` vhost before Mainnet T0.
+- **Certificate Runway:** All 7 existing Kovanica TLS certs expire `2027-01-13` to `2027-02-23` (safely past `1.1.2027`) with `certbot.timer` active.
+- **Missing DNS Records:** `pool.kovanica.online`, `rpc-mainnet.kovanica.online`, `seed2.kovanica.online`, `seed3.kovanica.online` (`NXDOMAIN`), plus apex `CAA` record on `kovanica.online`.
+- **VPS `seed1` (`145.223.116.178`) Telemetry:** Root disk `/` at **75%** (`50G` free), PM2 `kovanica-web` online (`f6eb253`), and `kovanica-chain2-faucet` container currently crash-looping (`Restarting (1)`) — queued for pre-launch remediation.
+
 ## Related Notes
 - [[01 - Consensus & L1 Architecture]]
 - [[03 - PRO-21 Address & Cryptography]]

@@ -95,7 +95,7 @@ tags:
 
 ## 9. Non-Token Revenue Model (`/pricing`)
 
-Six sustainable revenue streams **independent of KVNC token price**:
+Six sustainable revenue streams **independent of KVNC token price** — backed by live **Stripe Checkout / on-chain `USDC` & `KVNC` invoicing**, **SHA-256 API key provisioning**, and **tiered `X-RateLimit-*` enforcement**:
 
 1. **Managed RPC, WebSocket & Indexer SaaS** (`$49–$249/mo` + Dedicated SLA)
 2. **RWA Issuer & Compliance SaaS** (`$299–$999/mo` + White-Label)
@@ -109,10 +109,10 @@ Six sustainable revenue streams **independent of KVNC token price**:
 ## 10. Roadmap to Mainnet `1.1.2027`
 
 - **Now (Live on Testnet Chain 2):**
-  - Full L1 + Wasmi + Wave A–D + MV3 Browser Extension + 37-route Web Portal + `/pricing` live on VPS.
+  - Full L1 + Wasmi + Wave A–D + Chrome/Firefox MV3 Extension release kit + 37-route Web Portal + `/pricing` billing & API keys live on VPS.
 - **Pre-Mainnet Gate:**
   - External cryptographic & consensus security audit of `kovanica-l1` (`v1.0.0-mainnet` freeze).
-  - 3-node bridge & Stratum TLS dress rehearsals.
+  - Pre-mainnet infra remediation (`mainnet.kovanica.online` TLS SAN, seed/pool DNS) & 3-node dress rehearsals (`docs/pre-mainnet-2027-infra-prep.md`).
 - **T0 Genesis (`1.1.2027`):**
   - Mainnet Chain `1` (`1-f35df34c92001436`) activation.
 
