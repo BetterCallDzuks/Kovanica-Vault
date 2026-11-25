@@ -189,7 +189,14 @@
 /* Canvas Polish */
 .canvas-node-container {
   border-radius: 12px !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  background-color: #141418 !important;
+  border-width: 1.5px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.canvas-node-placeholder {
+  background-color: #16161b !important;
+  color: #f2f1ee !important;
 }
 
 .canvas-group-label {
