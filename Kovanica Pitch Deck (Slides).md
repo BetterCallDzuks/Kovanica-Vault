@@ -8,8 +8,7 @@ tags:
 
 # Kovanica Protocol (KVNC)
 
-**Hybrid PoW + GHOSTDAG Layer-1**
-*Fast BlockDAG finality · Deterministic Wasmi Smart Contracts · Institutional KVP-106 RWA*
+![[assets/kovanica-banner.svg]]
 
 - **Live Testnet:** `https://testnet.kovanica.online` (Chain ID `2`)
 - **Mainnet Launch:** **1.1.2027** (Chain ID `1`, audit-frozen RC)
@@ -37,11 +36,10 @@ tags:
 
 ## 3. Frozen Tokenomics (KVNC)
 
-- **Ticker:** `KVNC` (`9` decimals = `1,000,000,000` atoms)
-- **Initial Block Reward:** `2.5 KVNC`
-- **Subsidy Era:** `8,200,000` blocks per era with **`3/4` geometric decay**
-- **Fee Split:** **`3/4` burned** (deflationary pressure) · **`1/4` to miner**
-- **EIP-1559 Dynamic Base Fee + Storage Deposit** (Wave B)
+![[assets/emission-curve.svg]]
+
+- **Ticker:** `KVNC` (`9` decimals) · **Initial Reward:** `2.5 KVNC` · **Era:** `8,200,000` blocks (`3/4` decay)
+- **Fee Split:** **`3/4` burned** · **`1/4` miner** · **Wave B:** EIP-1559 dynamic base fee + storage deposit
 
 ---
 

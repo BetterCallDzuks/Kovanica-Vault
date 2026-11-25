@@ -1,94 +1,22 @@
 {
-  "nodes": [
-    {
-      "id": "rev-hero",
-      "type": "text",
-      "x": -260,
-      "y": -560,
-      "width": 640,
-      "height": 150,
-      "color": "3",
-      "text": "# Kovanica Revenue Engine (Non-Token)\n**6 Independent Revenue Streams · Zero Tracking Cookies · Live on `/pricing`**\n*Sustainable fiat & protocol-adjacent cashflow decoupled from KVNC price volatility.*\n\nFull details: [[11 - Revenue & Non-Token Monetization]] · [[00 - Kovanica Protocol MOC]]"
-    },
-    {
-      "id": "s1",
-      "type": "text",
-      "x": -820,
-      "y": -320,
-      "width": 360,
-      "height": 180,
-      "color": "5",
-      "text": "### 1 · Managed RPC & Indexer SaaS\n- **Model:** Monthly API key tiers\n- **Pricing:** Free · `$49` Builder · `$249` Scale · Custom SLA\n- **Buyers:** dApps, wallets, bots, exchanges\n- **Surface:** `/pricing` + `/api-reference`"
-    },
-    {
-      "id": "s2",
-      "type": "text",
-      "x": -400,
-      "y": -320,
-      "width": 360,
-      "height": 180,
-      "color": "3",
-      "text": "### 2 · RWA Issuer & Compliance SaaS\n- **Model:** B2B compliance subscription\n- **Pricing:** `$299` Launch · `$999` Institutional · White-Label\n- **Buyers:** Funds, real estate, bond issuers\n- **Surface:** `/wallet/rwa-issue` & `/wallet/rwa-manage`"
-    },
-    {
-      "id": "s3",
-      "type": "text",
-      "x": 20,
-      "y": -320,
-      "width": 360,
-      "height": 180,
-      "color": "4",
-      "text": "### 3 · Front-End Swap & Bridge Fee\n- **Model:** Optional hosted UX routing fee\n- **Pricing:** `0.00%` testnet · `0.15%–0.25%` mainnet (`VITE_SWAP_INTERFACE_FEE_BPS`)\n- **Buyers:** Retail & DeFi traders\n- **Surface:** `/swap`, `wallet-web`, `browser-extension`"
-    },
-    {
-      "id": "s4",
-      "type": "text",
-      "x": 440,
-      "y": -320,
-      "width": 360,
-      "height": 180,
-      "color": "5",
-      "text": "### 4 · Official Stratum Mining Pool\n- **Model:** Automatic block-reward pool fee\n- **Pricing:** `0%` testnet · `1.0%` mainnet (`VITE_MINING_POOL_FEE_PCT`)\n- **Buyers:** CPU/GPU miners & mining farms\n- **Surface:** `/pool` (`MinerCommandBuilder`)"
-    },
-    {
-      "id": "s5",
-      "type": "text",
-      "x": -610,
-      "y": -60,
-      "width": 440,
-      "height": 185,
-      "color": "2",
-      "text": "### 5 · Verified Listings & Zero-Cookie Sponsors\n- **Verified Token Listing:** `$250` one-time contract/metadata check\n- **Verified RWA Issuer Badge:** `$500` compliance attestation\n- **Static Sponsor Banner:** `$400/mo` (`<SponsorSlot>` on `/faucet`, `/docs`, `/pricing`)\n- **Partner Referrals:** Hardware wallets & VPS (`https://` env-gated)"
-    },
-    {
-      "id": "s6",
-      "type": "text",
-      "x": -90,
-      "y": -60,
-      "width": 440,
-      "height": 185,
-      "color": "6",
-      "text": "### 6 · Exchange & Enterprise Integration\n- **Exchange Onboarding:** From `$2,500` (node, PRO-21 deposit/withdraw)\n- **Custom Indexer Pipeline:** From `$1,500` (KVP-102/106 webhooks)\n- **SDK & Contract Advisory:** Retainer / fixed-scope sprints\n- **Buyers:** CEXs, custodians, enterprise builders"
-    },
-    {
-      "id": "intake",
-      "type": "text",
-      "x": -220,
-      "y": 210,
-      "width": 560,
-      "height": 150,
-      "color": "2",
-      "text": "### Live Server Intake (`POST /api/inquiries`)\n- Schema-validated · Honeypot bot trap · Per-IP sliding-window rate limit\n- Appends directly to VPS `data/inquiries.jsonl` (zero third-party CRM trackers)\n- Ready to plug in Stripe Checkout or on-chain KVNC/USDC invoicing next"
-    }
-  ],
-  "edges": [
-    { "id": "r1", "fromNode": "rev-hero", "fromSide": "bottom", "toNode": "s1", "toSide": "top", "color": "5" },
-    { "id": "r2", "fromNode": "rev-hero", "fromSide": "bottom", "toNode": "s2", "toSide": "top", "color": "3" },
-    { "id": "r3", "fromNode": "rev-hero", "fromSide": "bottom", "toNode": "s3", "toSide": "top", "color": "4" },
-    { "id": "r4", "fromNode": "rev-hero", "fromSide": "bottom", "toNode": "s4", "toSide": "top", "color": "5" },
-    { "id": "r5", "fromNode": "s1", "fromSide": "bottom", "toNode": "intake", "toSide": "left", "label": "API Key Requests" },
-    { "id": "r6", "fromNode": "s2", "fromSide": "bottom", "toNode": "intake", "toSide": "top", "label": "Issuer Onboarding" },
-    { "id": "r7", "fromNode": "s5", "fromSide": "bottom", "toNode": "intake", "toSide": "left", "label": "Listing / Sponsor" },
-    { "id": "r8", "fromNode": "s6", "fromSide": "bottom", "toNode": "intake", "toSide": "right", "label": "Enterprise Scope" }
-  ]
+	"nodes":[
+		{"id":"rev-hero","type":"text","x":-260,"y":-560,"width":640,"height":150,"color":"3","text":"# Kovanica Revenue Engine (Non-Token)\n**6 Independent Revenue Streams · Zero Tracking Cookies · Live on `/pricing`**\n*Sustainable fiat & protocol-adjacent cashflow decoupled from KVNC price volatility.*\n\nFull details: [[11 - Revenue & Non-Token Monetization]] · [[00 - Kovanica Protocol MOC]]"},
+		{"id":"s1","type":"text","x":-820,"y":-320,"width":360,"height":180,"color":"5","text":"### 1 · Managed RPC & Indexer SaaS\n- **Model:** Monthly API key tiers\n- **Pricing:** Free · `$49` Builder · `$249` Scale · Custom SLA\n- **Buyers:** dApps, wallets, bots, exchanges\n- **Surface:** `/pricing` + `/api-reference`"},
+		{"id":"s2","type":"text","x":-400,"y":-320,"width":360,"height":180,"color":"3","text":"### 2 · RWA Issuer & Compliance SaaS\n- **Model:** B2B compliance subscription\n- **Pricing:** `$299` Launch · `$999` Institutional · White-Label\n- **Buyers:** Funds, real estate, bond issuers\n- **Surface:** `/wallet/rwa-issue` & `/wallet/rwa-manage`"},
+		{"id":"s3","type":"text","x":20,"y":-320,"width":360,"height":180,"color":"4","text":"### 3 · Front-End Swap & Bridge Fee\n- **Model:** Optional hosted UX routing fee\n- **Pricing:** `0.00%` testnet · `0.15%–0.25%` mainnet (`VITE_SWAP_INTERFACE_FEE_BPS`)\n- **Buyers:** Retail & DeFi traders\n- **Surface:** `/swap`, `wallet-web`, `browser-extension`"},
+		{"id":"s4","type":"text","x":440,"y":-320,"width":360,"height":180,"color":"5","text":"### 4 · Official Stratum Mining Pool\n- **Model:** Automatic block-reward pool fee\n- **Pricing:** `0%` testnet · `1.0%` mainnet (`VITE_MINING_POOL_FEE_PCT`)\n- **Buyers:** CPU/GPU miners & mining farms\n- **Surface:** `/pool` (`MinerCommandBuilder`)"},
+		{"id":"s5","type":"text","x":-610,"y":-60,"width":440,"height":185,"color":"2","text":"### 5 · Verified Listings & Zero-Cookie Sponsors\n- **Verified Token Listing:** `$250` one-time contract/metadata check\n- **Verified RWA Issuer Badge:** `$500` compliance attestation\n- **Static Sponsor Banner:** `$400/mo` (`<SponsorSlot>` on `/faucet`, `/docs`, `/pricing`)\n- **Partner Referrals:** Hardware wallets & VPS (`https://` env-gated)"},
+		{"id":"s6","type":"text","x":-90,"y":-60,"width":440,"height":185,"color":"6","text":"### 6 · Exchange & Enterprise Integration\n- **Exchange Onboarding:** From `$2,500` (node, PRO-21 deposit/withdraw)\n- **Custom Indexer Pipeline:** From `$1,500` (KVP-102/106 webhooks)\n- **SDK & Contract Advisory:** Retainer / fixed-scope sprints\n- **Buyers:** CEXs, custodians, enterprise builders"},
+		{"id":"intake","type":"text","x":-220,"y":210,"width":560,"height":150,"color":"2","text":"### Live Server Intake (`POST /api/inquiries`)\n- Schema-validated · Honeypot bot trap · Per-IP sliding-window rate limit\n- Appends directly to VPS `data/inquiries.jsonl` (zero third-party CRM trackers)\n- Ready to plug in Stripe Checkout or on-chain KVNC/USDC invoicing next"}
+	],
+	"edges":[
+		{"id":"r1","fromNode":"rev-hero","fromSide":"bottom","toNode":"s1","toSide":"top","color":"5"},
+		{"id":"r2","fromNode":"rev-hero","fromSide":"bottom","toNode":"s2","toSide":"top","color":"3"},
+		{"id":"r3","fromNode":"rev-hero","fromSide":"bottom","toNode":"s3","toSide":"top","color":"4"},
+		{"id":"r4","fromNode":"rev-hero","fromSide":"bottom","toNode":"s4","toSide":"top","color":"5"},
+		{"id":"r5","fromNode":"s1","fromSide":"bottom","toNode":"intake","toSide":"left","label":"API Key Requests"},
+		{"id":"r6","fromNode":"s2","fromSide":"bottom","toNode":"intake","toSide":"top","label":"Issuer Onboarding"},
+		{"id":"r7","fromNode":"s5","fromSide":"bottom","toNode":"intake","toSide":"left","label":"Listing / Sponsor"},
+		{"id":"r8","fromNode":"s6","fromSide":"bottom","toNode":"intake","toSide":"right","label":"Enterprise Scope"}
+	]
 }

@@ -16,8 +16,10 @@ sdk_version: 0.9.0
 
 # Kovanica Protocol (KVNC)
 
-> [!IMPORTANT] Start Exploring in 3 Views
-> - **Architecture Canvas:** [[Kovanica Architecture & Ecosystem.canvas]] · **Revenue Canvas:** [[Kovanica Business & Revenue Map.canvas]]
+![[assets/kovanica-banner.svg]]
+
+> [!IMPORTANT] Start Exploring in 4 Views
+> - **Canvases:** [[Kovanica Architecture & Ecosystem.canvas]] · [[Kovanica Business & Revenue Map.canvas]] · [[Kovanica Mainnet 1.1.2027 Roadmap.canvas]]
 > - **Color Bubble Graph:** Press `Ctrl+G` (pre-configured with Kovanica Gold / Teal / Blue / Purple / Emerald / Coral clusters)
 > - **Pitch Deck Slides:** Open [[Kovanica Pitch Deck (Slides)]] → `Ctrl+P` → **Slides: Start presentation**
 
@@ -74,6 +76,15 @@ sdk_version: 0.9.0
       <li>[[07 - Web Properties & 5-Tab IA]] — kovanica.online & 5 function tabs</li>
       <li>[[11 - Revenue & Non-Token Monetization]] — 6 streams live on /pricing</li>
       <li>[[12 - Security, Audit & Mainnet 1.1.2027]] — Audit freeze & chain isolation</li>
+    </ul>
+  </div>
+  <div class="kovanica-card">
+    <h3>4 · Strategy, Cookbook & Brand</h3>
+    <ul>
+      <li>[[13 - Competitive Positioning (PoW vs PoS vs DAG)]] — PoW vs PoS vs DAG matrix</li>
+      <li>[[14 - Developer Quickstart & RPC Cookbook]] — Live curl, SDK & Stratum commands</li>
+      <li>[[15 - Visual Brand & Design System]] — Color swatches & typography DNA</li>
+      <li>[[Kovanica Mainnet 1.1.2027 Roadmap.canvas]] — 5-phase visual launch timeline</li>
     </ul>
   </div>
 </div>

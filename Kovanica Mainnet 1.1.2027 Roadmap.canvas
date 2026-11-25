@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "rm-hero",
+      "type": "text",
+      "x": -340,
+      "y": -440,
+      "width": 720,
+      "height": 135,
+      "color": "3",
+      "text": "# Kovanica Roadmap → Mainnet `1.1.2027`\n**From-Scratch Rust L1 · Live Testnet Chain 2 · Audit-Frozen Release Candidate**\n\nReturn to [[00 - Kovanica Protocol MOC]] · [[12 - Security, Audit & Mainnet 1.1.2027]]"
+    },
+    {
+      "id": "p1",
+      "type": "text",
+      "x": -980,
+      "y": -220,
+      "width": 350,
+      "height": 230,
+      "color": "4",
+      "text": "### Phase 1 · Core L1 & Testnet\n**Status: COMPLETE & LIVE**\n- Hybrid PoW + GHOSTDAG (`K=5`, `4s`)\n- `KovanicaHash` + Wasmi runtime\n- PRO-21 addresses (`kvnc…dag`)\n- Live Chain 2 (`2-24cdb5fadd98b207`)\n- `seed1.kovanica.online:8000` & RPC\n\n[[01 - Consensus & L1 Architecture]]"
+    },
+    {
+      "id": "p2",
+      "type": "text",
+      "x": -560,
+      "y": -220,
+      "width": 350,
+      "height": 230,
+      "color": "4",
+      "text": "### Phase 2 · Wave A–D & Clients\n**Status: COMPLETE & MERGED**\n- Wave A batches, Wave B base fee\n- Wave C passkeys/scheduler, Wave D bridge\n- Native AMM (`/swap`, `/pools`) & KVP-106 RWA\n- `kovanica-sdk v0.9.0` + `browser-extension` MV3\n- `wallet-web`, `console-desktop`, `node-desktop`\n\n[[04 - Wave A-D Protocol Features]]"
+    },
+    {
+      "id": "p3",
+      "type": "text",
+      "x": -140,
+      "y": -220,
+      "width": 350,
+      "height": 230,
+      "color": "4",
+      "text": "### Phase 3 · Web UX & Revenue\n**Status: LIVE ON VPS**\n- Domain/link map across all 5 repos\n- 5 pure function tabs (`Explore · Trade · Assets · Wallet · Build`)\n- Dedicated `/pool` Mining Pool vs `/pools` AMM\n- `/pricing` (6 non-token streams) + `POST /api/inquiries`\n- Zero tracking cookies · 124/124 E2E PASS\n\n[[07 - Web Properties & 5-Tab IA]]"
+    },
+    {
+      "id": "p4",
+      "type": "text",
+      "x": 280,
+      "y": -220,
+      "width": 350,
+      "height": 230,
+      "color": "3",
+      "text": "### Phase 4 · External Audit Gate\n**Status: IN PROGRESS (PRE-MAINNET)**\n- Formal external security audit of `kovanica-l1` (`v1.0.0-mainnet` freeze)\n- `KovanicaHash`, P-256 & ML-DSA-65 crypto review\n- 3-node bridge & Stratum TLS dress rehearsals\n- Seed DNS & `mainnet.kovanica.online` TLS SAN\n\n[[12 - Security, Audit & Mainnet 1.1.2027]]"
+    },
+    {
+      "id": "p5",
+      "type": "text",
+      "x": 700,
+      "y": -220,
+      "width": 350,
+      "height": 230,
+      "color": "1",
+      "text": "### Phase 5 · Mainnet T0 Genesis\n**Target: 1.1.2027**\n- Chain ID `1` (`1-f35df34c92001436`) activation\n- Official Stratum V1 TLS Pool (`1.0%` fee)\n- Managed RPC paid tiers & RWA Issuer SaaS\n- Exchange & custodian integrations\n- Optional front-end swap interface fee\n\n[[11 - Revenue & Non-Token Monetization]]"
+    }
+  ],
+  "edges": [
+    { "id": "t1", "fromNode": "p1", "fromSide": "right", "toNode": "p2", "toSide": "left", "color": "4", "label": "Done" },
+    { "id": "t2", "fromNode": "p2", "fromSide": "right", "toNode": "p3", "toSide": "left", "color": "4", "label": "Done" },
+    { "id": "t3", "fromNode": "p3", "fromSide": "right", "toNode": "p4", "toSide": "left", "color": "3", "label": "Active Gate" },
+    { "id": "t4", "fromNode": "p4", "fromSide": "right", "toNode": "p5", "toSide": "left", "color": "1", "label": "1.1.2027" }
+  ]
+}

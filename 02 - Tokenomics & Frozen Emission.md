@@ -11,6 +11,8 @@ status: frozen
 
 Back to [[00 - Kovanica Protocol MOC]]
 
+![[assets/emission-curve.svg]]
+
 > [!IMPORTANT] Audit-Frozen Economic Parameters
 > All emission and fee-split constants below are locked in `kovanica-l1` for Mainnet (`1.1.2027`).
 

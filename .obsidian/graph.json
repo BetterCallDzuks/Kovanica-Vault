@@ -9,39 +9,57 @@
   "colorGroups": [
     {
       "query": "tag:#hub OR tag:#tokenomics",
-      "color": { "a": 1, "rgb": 15902976 }
+      "color": {
+        "a": 1,
+        "rgb": 15902976
+      }
     },
     {
       "query": "tag:#l1 OR tag:#consensus OR tag:#mining",
-      "color": { "a": 1, "rgb": 9085108 }
+      "color": {
+        "a": 1,
+        "rgb": 9085108
+      }
     },
     {
       "query": "tag:#defi OR tag:#rwa",
-      "color": { "a": 1, "rgb": 3128228 }
+      "color": {
+        "a": 1,
+        "rgb": 3128228
+      }
     },
     {
       "query": "tag:#apps OR tag:#sdk OR tag:#playground",
-      "color": { "a": 1, "rgb": 10979578 }
+      "color": {
+        "a": 1,
+        "rgb": 10979578
+      }
     },
     {
       "query": "tag:#web OR tag:#revenue",
-      "color": { "a": 1, "rgb": 3462041 }
+      "color": {
+        "a": 1,
+        "rgb": 3462041
+      }
     },
     {
       "query": "tag:#security OR tag:#roadmap",
-      "color": { "a": 1, "rgb": 16347926 }
+      "color": {
+        "a": 1,
+        "rgb": 16347926
+      }
     }
   ],
   "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": -0.35,
+  "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 1.5,
   "lineSizeMultiplier": 1.1,
   "collapse-forces": false,
   "centerStrength": 0.35,
-  "repelStrength": 15.0,
+  "repelStrength": 15,
   "linkStrength": 0.8,
   "linkDistance": 240,
-  "scale": 0.85,
-  "close": false
+  "scale": 0.28824195426493265,
+  "close": true
 }
