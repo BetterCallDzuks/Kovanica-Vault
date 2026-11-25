@@ -16,7 +16,7 @@ All five repositories under **`BetterCallDzuks/*`** enforce a strict PR-only wor
 flowchart TB
     L1["1. kovanica-l1 (Rust L1 · Audit-Frozen)"]
     SDK["2. kovanica-sdk v0.9.0 (TypeScript SDK)"]
-    WEB["3. kovanica-web (kovanica.online · 37 Routes)"]
+    WEB["3. kovanica-web (kovanica.online · 38 Routes)"]
     APPS["4. kovanica-apps (wallet-web · MV3 Extension · Desktop · Mobile)"]
     PG["5. kovanica-playground (Developer RPC & Studio Workbench)"]
 

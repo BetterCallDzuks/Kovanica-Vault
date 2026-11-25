@@ -75,7 +75,7 @@ tags:
 
 1. **`kovanica-l1`** — Rust L1 node, consensus, Wasmi, RPC, Stratum, Faucet, Indexer, CLI
 2. **`kovanica-sdk` (`v0.9.0`)** — TypeScript browser/Node SDK, failover RPC/WS, offline codecs
-3. **`kovanica-web`** — Public portal (`kovanica.online`), 37 routes, 5 pure function tabs
+3. **`kovanica-web`** — Public portal (`kovanica.online`), 38 routes, 5 pure function tabs, left-to-right BlockDAG Explorer
 4. **`kovanica-apps`** — `wallet-web`, MV3 `browser-extension` (`window.kovanica`), Desktop & Mobile
 5. **`kovanica-playground`** — Interactive RPC console & 4-group developer studio
 
@@ -85,11 +85,11 @@ tags:
 
 **5 Pure Function Tabs** across every route (zero duplicates, zero tracking cookies):
 
-- **Explore:** Explorer (8 tabs), Network, Mining Pool (`/pool`), Origins Map, Dashboard, Roadmap
+- **Explore:** Left-to-Right BlockDAG Explorer (8 tabs + plain-English legend), Network, Mining Pool (`/pool`), Origins Map, Dashboard, Roadmap
 - **Trade:** Swap (`/swap`), Liquidity Pools (`/pools`), Orderbook DEX, Atomic Swaps
 - **Assets:** RWA Registry (`/rwa`), Issue RWA, Manage RWA, Multi-Asset, Native NFTs, Token Listings
 - **Wallet:** Web Wallet, Faucet, Airdrops, CoinJoin, Ecosystem Tools
-- **Build:** Multisig, HTLC, Vaults, Stealth, Docs, API Reference, Playground, Pricing & Services
+- **Build:** Multisig, HTLC, Vaults, Stealth, Docs, API Reference, Playground, Pricing & Services, Privacy Policy (`/privacy`)
 
 ---
 
@@ -109,10 +109,10 @@ Six sustainable revenue streams **independent of KVNC token price** — backed b
 ## 10. Roadmap to Mainnet `1.1.2027`
 
 - **Now (Live on Testnet Chain 2):**
-  - Full L1 + Wasmi + Wave A–D + Chrome/Firefox MV3 Extension release kit + 37-route Web Portal + `/pricing` billing & API keys live on VPS.
+  - Full L1 + Wasmi + Wave A–D + Chrome/Firefox MV3 Extension release kit (with live `/privacy`) + 38-route Web Portal (left-to-right BlockDAG Explorer, `/pricing` billing & API keys) + remediated `seed1` TLS/faucet live on VPS.
 - **Pre-Mainnet Gate:**
   - External cryptographic & consensus security audit of `kovanica-l1` (`v1.0.0-mainnet` freeze).
-  - Pre-mainnet infra remediation (`mainnet.kovanica.online` TLS SAN, seed/pool DNS) & 3-node dress rehearsals (`docs/pre-mainnet-2027-infra-prep.md`).
+  - Provision missing Mainnet DNS (`pool`, `rpc-mainnet`, `seed2`, `seed3`, `CAA`) & execute 3-node full-mesh dress rehearsals (`docs/pre-mainnet-2027-infra-prep.md`).
 - **T0 Genesis (`1.1.2027`):**
   - Mainnet Chain `1` (`1-f35df34c92001436`) activation.
 

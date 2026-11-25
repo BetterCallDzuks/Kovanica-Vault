@@ -36,7 +36,7 @@ sdk_version: 0.9.0
   </div>
   <div class="kovanica-kpi teal">
     <div class="kovanica-kpi-label">Live Web Portal</div>
-    <div class="kovanica-kpi-value">37 Routes</div>
+    <div class="kovanica-kpi-value">38 Routes</div>
     <div class="kovanica-kpi-sub">5 Pure Function Tabs · 0 Cookies</div>
   </div>
   <div class="kovanica-kpi">
@@ -97,7 +97,7 @@ sdk_version: 0.9.0
 ```mermaid
 flowchart LR
     L1["kovanica-l1\nHybrid PoW + GHOSTDAG\nWasmi Runtime"] -->|"JSON-RPC 2.0 / WS"| SDK["kovanica-sdk v0.9.0"]
-    SDK --> WEB["kovanica-web\n37 Routes · 5 Tabs"]
+    SDK --> WEB["kovanica-web\n38 Routes · 5 Tabs"]
     SDK --> APPS["kovanica-apps\nwallet-web · MV3 · Desktop · Mobile"]
     SDK --> PG["kovanica-playground\n4-Group Dev Studio"]
     WEB --> REV["/pricing\n6 Non-Token Revenue Streams"]
@@ -115,5 +115,7 @@ flowchart LR
 | **Built-in Playground** | [playground.kovanica.online](https://playground.kovanica.online) | Live `200` |
 | **Dashboard** | [dash.kovanica.online](https://dash.kovanica.online) | Live `200` |
 | **Pricing & Services** | [testnet.kovanica.online/pricing](https://testnet.kovanica.online/pricing) | Live `200` |
+| **Privacy Policy** | [kovanica.online/privacy](https://kovanica.online/privacy) | Live `200` (Store-verified) |
+| **Mainnet Gate** | [mainnet.kovanica.online](https://mainnet.kovanica.online) | Live TLS `200` (Launching `1.1.2027`) |
 | **Public Testnet RPC** | `https://rpc-testnet.kovanica.online/rpc` | Live `200` (Chain `2`) |
 | **GitHub Organization** | [github.com/BetterCallDzuks](https://github.com/BetterCallDzuks) | 6 Public Repos |

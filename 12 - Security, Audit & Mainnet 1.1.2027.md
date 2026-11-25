@@ -25,14 +25,15 @@ Back to [[00 - Kovanica Protocol MOC]]
 - **Zero Mainnet/Testnet Leakage:** Mainnet pre-launch endpoints return explicit `503` (reads) / `403` (mutations) — never silently falling back to testnet data.
 - **Zero Secret Leakage & CSP Hardening:** Per-request CSP nonces, HSTS, `X-Frame-Options: DENY`, strict `https://` URL sanitization on all sponsor/partner configs, and zero committed `.env` or keystore files.
 
-## Pre-Mainnet `1.1.2027` Live Infrastructure Audit (`2026-11-25`, `kovanica-web#40`)
+## Pre-Mainnet `1.1.2027` Live Infrastructure Audit & Remediation (`2026-11-25`)
 
 Full live audit & 3-node dress rehearsal runbook lives in `kovanica-web/docs/pre-mainnet-2027-infra-prep.md`:
 
-- **Edge TLS SAN Gap (`mainnet.kovanica.online`):** Currently HTTP-only in Nginx, causing HTTPS to fall back to `dash.kovanica.online` (`curl (60)`). Requires Certbot cert + `443 ssl` vhost before Mainnet T0.
-- **Certificate Runway:** All 7 existing Kovanica TLS certs expire `2027-01-13` to `2027-02-23` (safely past `1.1.2027`) with `certbot.timer` active.
-- **Missing DNS Records:** `pool.kovanica.online`, `rpc-mainnet.kovanica.online`, `seed2.kovanica.online`, `seed3.kovanica.online` (`NXDOMAIN`), plus apex `CAA` record on `kovanica.online`.
-- **VPS `seed1` (`145.223.116.178`) Telemetry:** Root disk `/` at **75%** (`50G` free), PM2 `kovanica-web` online (`f6eb253`), and `kovanica-chain2-faucet` container currently crash-looping (`Restarting (1)`) — queued for pre-launch remediation.
+- **Edge TLS SAN (`mainnet.kovanica.online`) — RESOLVED:** Issued Let's Encrypt cert via webroot (`CN=mainnet.kovanica.online`, valid until `2027-02-23`, auto-renewing) and added `443 ssl` + `http2` Nginx vhost; verified `HTTP/2 200`.
+- **Certificate Runway:** All 8 Kovanica origin TLS certs expire `2027-01-13` to `2027-02-23` (safely past `1.1.2027`) with `certbot.timer` active.
+- **Testnet Faucet (`kovanica-chain2-faucet`) — RESOLVED:** Fixed missing `KOVANICA_FAUCET_PASSPHRASE` container env; now `Up (healthy)` and returning `OK` on `/health`.
+- **VPS `seed1` (`145.223.116.178`) Disk Hygiene — IMPROVED:** Reclaimed ~7.5 GB of Docker/npm/sccache/Playwright caches & systemd journals, bringing `/` from `75%` down to **`70–71%`** (`58G` free).
+- **Remaining Pre-Mainnet Gates:** Provision Cloudflare DNS records (`pool`, `rpc-mainnet`, `seed2`, `seed3`, apex `CAA`), bring online independent `seed2` & `seed3` VPS hosts, open external TCP `:8000` P2P on all 3 seeds, and execute the full-mesh 3-node dress rehearsal.
 
 ## Related Notes
 - [[01 - Consensus & L1 Architecture]]
