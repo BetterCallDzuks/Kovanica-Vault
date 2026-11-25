@@ -22,7 +22,7 @@ Back to [[00 - Kovanica Protocol MOC]]
 | **`console-desktop`** | Tauri + React | Operator node inspector, single-POST batch RPC health probe, cluster readiness aggregator |
 | **`node-desktop`** | Tauri (Linux `.deb`) | External `kovanica-node` supervisor, Stratum & faucet alarms, snapshot verifier |
 | **`desktop`** | Tauri | E2E encrypted Comms shell |
-| **`android*` & `ios`** | Kotlin / Swift + UniFFI | Light wallet, `BatchTokenDeployHelper` (1-tap Wave A Deploy+Call), Android full-node PoC |
+| **`android*` & `ios`** | Kotlin / Swift + UniFFI | `android-wallet` (streamlined 2-tab Wallet/Account, `Testnet`/`Mainnet` only, dark 24-word seed confirmation, BIP-44 parity), `android-node` (foreground `START_STICKY` + WakeLock/WifiLock keep-alive, embedded `127.0.0.1:8545` RPC & thermal-safe `1..4`-thread PoW miner), `BatchTokenDeployHelper` & iOS light client |
 
 ## Related Notes
 - [[03 - PRO-21 Address & Cryptography]]

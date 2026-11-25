@@ -23,7 +23,7 @@ kvnc + 57 base32 characters + dag
 
 ## Cryptographic Primitives Across the Stack
 
-1. **Ed25519** — Canonical account keys & SLIP-0010 HD derivation (`kovanica-sdk` & `kovanica-apps`).
+1. **Ed25519** — Canonical account keys & SLIP-0010 / BIP-44 HD derivation (`m/44'/3007'/<account>'/0'/0'`) unified byte-for-byte across `kovanica-web`, `kovanica-sdk`, `browser-extension`, `android-wallet`, and `android-node` (12- & 24-word BIP-39).
 2. **P-256 (WebAuthn Passkeys)** — Hardware-backed browser/mobile passkey verification (Wave C).
 3. **ML-DSA-65** — Real post-quantum signature verification built into `kovanica-l1`.
 4. **BLAKE3** — Address checksums, KVP-106 deterministic RWA asset IDs (`kvp106:rwa:v1`), and air-gap envelopes (`kvnc-tx:v1:`).
