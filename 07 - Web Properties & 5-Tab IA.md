@@ -29,7 +29,7 @@ A single-source-of-truth `NAV_GROUPS` in `Shell` (shared with `HomeTestnet` and 
 
 1. **Explore:** `Explorer` (left-to-right multi-lane BlockDAG card graph with plain-English colour legend, directional merge/fork arrows & hover tooltips), `Network`, `Mining Pool` (`/pool`), `Origins Map`, `Dashboard`, `Roadmap`
 2. **Trade:** `Swap` (`/swap`), `Liquidity Pools` (`/pools`), `Orderbook DEX`, `Atomic Swaps`
-3. **Assets:** `RWA Registry` (`/rwa`), `Issue RWA`, `Manage RWA`, `Multi-Asset`, `Native NFTs`, `Token Listings`
+3. **Assets:** `RWA Registry` (`/rwa`), `Issue RWA` (client-signed KVP-106 issuance + inline JSON fallback), `Manage RWA`, `Multi-Asset` (end-to-end KVP-102 Create Token + balances/transfers), `Native NFTs` (end-to-end KVP-106 Create Collection & Mint NFT), `Token Listings`
 4. **Wallet:** `Wallet`, `Faucet`, `Airdrops`, `CoinJoin`, `Ecosystem Tools`
 5. **Build:** `Multisig`, `HTLC`, `Vaults`, `Stealth`, `Docs`, `API Reference`, `Playground`, `Pricing & Services` (`/pricing`), `Privacy Policy` (`/privacy`)
 
