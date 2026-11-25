@@ -1,0 +1,28 @@
+---
+title: Client Applications & Browser Extension
+tags:
+  - apps
+  - wallet
+repo: BetterCallDzuks/kovanica-apps
+---
+
+# 08 · Client Applications & Browser Extension
+
+Back to [[00 - Kovanica Protocol MOC]]
+
+`kovanica-apps` delivers Kovanica across browser, desktop, and mobile — all aligned to canonical `rpc-testnet.kovanica.online/rpc` and cross-linked via the Ecosystem Switcher:
+
+| App | Platform / Stack | Key Capabilities |
+| :--- | :--- | :--- |
+| **`wallet-web`** | React / TanStack Start + `kovanica-sdk v0.9.0` | Multi-endpoint RPC failover, finality watcher, 3-sub-tab Contracts workspace (7 typed facades + batch + logs/multisig), air-gap `kvnc-tx:v1:` envelopes, chain-aware explorer links |
+| **`browser-extension`** | Chrome / Brave / Firefox **MV3** | Non-custodial popup wallet + **`window.kovanica`** dApp provider, Wave A `signBatchTransaction` approval modal, Chrome/Firefox store zip packager |
+| **`console-desktop`** | Tauri + React | Operator node inspector, single-POST batch RPC health probe, cluster readiness aggregator |
+| **`node-desktop`** | Tauri (Linux `.deb`) | External `kovanica-node` supervisor, Stratum & faucet alarms, snapshot verifier |
+| **`desktop`** | Tauri | E2E encrypted Comms shell |
+| **`android*` & `ios`** | Kotlin / Swift + UniFFI | Light wallet, `BatchTokenDeployHelper` (1-tap Wave A Deploy+Call), Android full-node PoC |
+
+## Related Notes
+- [[03 - PRO-21 Address & Cryptography]]
+- [[04 - Wave A-D Protocol Features]]
+- [[06 - Five-Repository Ecosystem]]
+- [[09 - Developer SDK & Playground]]

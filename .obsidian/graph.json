@@ -1,0 +1,47 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#hub OR tag:#tokenomics",
+      "color": { "a": 1, "rgb": 15902976 }
+    },
+    {
+      "query": "tag:#l1 OR tag:#consensus OR tag:#mining",
+      "color": { "a": 1, "rgb": 9085108 }
+    },
+    {
+      "query": "tag:#defi OR tag:#rwa",
+      "color": { "a": 1, "rgb": 3128228 }
+    },
+    {
+      "query": "tag:#apps OR tag:#sdk OR tag:#playground",
+      "color": { "a": 1, "rgb": 10979578 }
+    },
+    {
+      "query": "tag:#web OR tag:#revenue",
+      "color": { "a": 1, "rgb": 3462041 }
+    },
+    {
+      "query": "tag:#security OR tag:#roadmap",
+      "color": { "a": 1, "rgb": 16347926 }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.5,
+  "nodeSizeMultiplier": 1.35,
+  "lineSizeMultiplier": 1.15,
+  "collapse-forces": false,
+  "centerStrength": 0.45,
+  "repelStrength": 12.5,
+  "linkStrength": 0.85,
+  "linkDistance": 220,
+  "scale": 0.9,
+  "close": false
+}

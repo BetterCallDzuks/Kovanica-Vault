@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "id": "grp-l1",
+      "type": "group",
+      "x": -980,
+      "y": -560,
+      "width": 620,
+      "height": 500,
+      "color": "5",
+      "label": "1 · Layer-1 Core (kovanica-l1 · Rust)"
+    },
+    {
+      "id": "grp-sdk",
+      "type": "group",
+      "x": -260,
+      "y": -560,
+      "width": 540,
+      "height": 500,
+      "color": "6",
+      "label": "2 · Developer Layer (kovanica-sdk v0.9.0 & Playground)"
+    },
+    {
+      "id": "grp-web",
+      "type": "group",
+      "x": 380,
+      "y": -560,
+      "width": 640,
+      "height": 500,
+      "color": "4",
+      "label": "3 · Public Web & Subdomains (kovanica-web · 37 Routes)"
+    },
+    {
+      "id": "grp-apps",
+      "type": "group",
+      "x": -980,
+      "y": 40,
+      "width": 620,
+      "height": 420,
+      "color": "6",
+      "label": "4 · Client Applications (kovanica-apps)"
+    },
+    {
+      "id": "grp-defi",
+      "type": "group",
+      "x": -260,
+      "y": 40,
+      "width": 540,
+      "height": 420,
+      "color": "3",
+      "label": "5 · Wave A-D, DeFi AMM & KVP-106 RWA"
+    },
+    {
+      "id": "grp-rev",
+      "type": "group",
+      "x": 380,
+      "y": 40,
+      "width": 640,
+      "height": 420,
+      "color": "2",
+      "label": "6 · Revenue & Sustainability (/pricing · Zero Cookies)"
+    },
+    {
+      "id": "n-hub",
+      "type": "file",
+      "file": "00 - Kovanica Protocol MOC.md",
+      "x": -180,
+      "y": -820,
+      "width": 380,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "n-slides",
+      "type": "text",
+      "x": 280,
+      "y": -820,
+      "width": 360,
+      "height": 180,
+      "color": "3",
+      "text": "## Kovanica Protocol (KVNC)\n**Hybrid PoW + GHOSTDAG Layer-1**\n- Mainnet Launch: **1.1.2027** (`1-f35df34c92001436`)\n- Live Testnet: **Chain 2** (`2-24cdb5fadd98b207`)\n- Open [[Kovanica Pitch Deck (Slides)]] -> **Start presentation**"
+    },
+    {
+      "id": "n-consensus",
+      "type": "file",
+      "file": "01 - Consensus & L1 Architecture.md",
+      "x": -950,
+      "y": -510,
+      "width": 270,
+      "height": 195,
+      "color": "5"
+    },
+    {
+      "id": "n-tokenomics",
+      "type": "file",
+      "file": "02 - Tokenomics & Frozen Emission.md",
+      "x": -650,
+      "y": -510,
+      "width": 265,
+      "height": 195,
+      "color": "3"
+    },
+    {
+      "id": "n-pro21",
+      "type": "file",
+      "file": "03 - PRO-21 Address & Cryptography.md",
+      "x": -950,
+      "y": -290,
+      "width": 270,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "n-mining",
+      "type": "file",
+      "file": "10 - Mining Pool & Stratum V1 TLS.md",
+      "x": -650,
+      "y": -290,
+      "width": 265,
+      "height": 200,
+      "color": "5"
+    },
+    {
+      "id": "n-sdk",
+      "type": "file",
+      "file": "09 - Developer SDK & Playground.md",
+      "x": -230,
+      "y": -510,
+      "width": 480,
+      "height": 205,
+      "color": "6"
+    },
+    {
+      "id": "n-repos",
+      "type": "file",
+      "file": "06 - Five-Repository Ecosystem.md",
+      "x": -230,
+      "y": -280,
+      "width": 480,
+      "height": 190,
+      "color": "6"
+    },
+    {
+      "id": "n-web",
+      "type": "file",
+      "file": "07 - Web Properties & 5-Tab IA.md",
+      "x": 410,
+      "y": -510,
+      "width": 580,
+      "height": 215,
+      "color": "4"
+    },
+    {
+      "id": "n-web-tabs",
+      "type": "text",
+      "x": 410,
+      "y": -275,
+      "width": 580,
+      "height": 185,
+      "color": "4",
+      "text": "### 5 Pure Function Tabs (`Shell` + `HomeTestnet`)\n- **Explore**: Explorer, Network, Mining Pool (`/pool`), Origins Map, Dashboard, Roadmap\n- **Trade**: Swap (`/swap`), Liquidity Pools (`/pools`), Orderbook DEX, Atomic Swaps\n- **Assets**: RWA Registry (`/rwa`), Issue RWA, Manage RWA, Multi-Asset, Native NFTs, Token Listings\n- **Wallet**: Wallet, Faucet, Airdrops, CoinJoin, Ecosystem Tools\n- **Build**: Multisig, HTLC, Vaults, Stealth, Docs, API Reference, Playground, Pricing & Services"
+    },
+    {
+      "id": "n-apps",
+      "type": "file",
+      "file": "08 - Client Applications & Browser Extension.md",
+      "x": -950,
+      "y": 95,
+      "width": 560,
+      "height": 335,
+      "color": "6"
+    },
+    {
+      "id": "n-wave",
+      "type": "file",
+      "file": "04 - Wave A-D Protocol Features.md",
+      "x": -230,
+      "y": 95,
+      "width": 480,
+      "height": 155,
+      "color": "3"
+    },
+    {
+      "id": "n-defi",
+      "type": "file",
+      "file": "05 - DeFi, AMM & KVP-106 RWA.md",
+      "x": -230,
+      "y": 270,
+      "width": 480,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "n-rev",
+      "type": "file",
+      "file": "11 - Revenue & Non-Token Monetization.md",
+      "x": 410,
+      "y": 95,
+      "width": 580,
+      "height": 165,
+      "color": "2"
+    },
+    {
+      "id": "n-sec",
+      "type": "file",
+      "file": "12 - Security, Audit & Mainnet 1.1.2027.md",
+      "x": 410,
+      "y": 280,
+      "width": 580,
+      "height": 150,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    { "id": "e1", "fromNode": "n-hub", "fromSide": "bottom", "toNode": "grp-l1", "toSide": "top", "label": "Consensus" },
+    { "id": "e2", "fromNode": "n-hub", "fromSide": "bottom", "toNode": "grp-sdk", "toSide": "top", "label": "SDK v0.9.0" },
+    { "id": "e3", "fromNode": "n-hub", "fromSide": "bottom", "toNode": "grp-web", "toSide": "top", "label": "kovanica.online" },
+    { "id": "e4", "fromNode": "grp-l1", "fromSide": "right", "toNode": "grp-sdk", "toSide": "left", "label": "JSON-RPC 2.0 / WS" },
+    { "id": "e5", "fromNode": "grp-sdk", "fromSide": "right", "toNode": "grp-web", "toSide": "left", "label": "WASM + RPC Proxy" },
+    { "id": "e6", "fromNode": "grp-sdk", "fromSide": "bottom", "toNode": "grp-apps", "toSide": "top", "label": "Client Facades" },
+    { "id": "e7", "fromNode": "grp-l1", "fromSide": "bottom", "toNode": "grp-defi", "toSide": "left", "label": "Wasmi Runtime" },
+    { "id": "e8", "fromNode": "grp-defi", "fromSide": "right", "toNode": "grp-web", "toSide": "bottom", "label": "/swap · /pools · /rwa" },
+    { "id": "e9", "fromNode": "grp-web", "fromSide": "bottom", "toNode": "grp-rev", "toSide": "top", "label": "/pricing · /api/inquiries" },
+    { "id": "e10", "fromNode": "n-mining", "fromSide": "right", "toNode": "n-rev", "toSide": "left", "label": "Pool Fee (1.0% Mainnet)" }
+  ]
+}

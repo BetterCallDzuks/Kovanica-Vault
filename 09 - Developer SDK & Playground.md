@@ -1,0 +1,33 @@
+---
+title: Developer SDK & Playground
+tags:
+  - sdk
+  - playground
+repos:
+  - BetterCallDzuks/kovanica-sdk
+  - BetterCallDzuks/kovanica-playground
+sdk_version: 0.9.0
+---
+
+# 09 · Developer SDK & Playground
+
+Back to [[00 - Kovanica Protocol MOC]]
+
+## `kovanica-sdk` (`v0.9.0`)
+- Browser & Node.js TypeScript client with `FailoverHttpTransport` and `KovanicaWsClient` (`newHeads`, `newCommittedLeader`, backpressure-capped block+receipt streaming).
+- Typed contract facades across all 7 canonical families: `NameRegistryClient`, `TokenClient`, `EscrowClient`, `HtlcClient`, `NftClient`, `VaultClient`, `MultisigClient`.
+- Offline PRO-21 address validation, universal raw wire tx codec, storage-slot derivers, and air-gap `kvnc-tx:v1:` envelopes.
+
+## `kovanica-playground`
+A read-only developer console and interactive studio (zero private key custody) organized into **4 clean sub-tabs**:
+1. **HD Wallet & Signer** — Ephemeral SLIP-0010 wallet, tx auto-decoder, air-gap studio, fee-tier estimator.
+2. **Contracts & Codegen** — Wasmi call builder, multi-call batch estimator, cURL/SDK codegen, 7 typed facades.
+3. **Storage & Logs** — Storage slot deriver, live `kovanica_getStorageAt` bincode decoder, paginated log explorer.
+4. **Verification & Diagnostics** — Failover RPC probe, receipt poller, JSON-RPC 2.0 batch runner, golden vectors.
+- Plus **Wave A–D & RWA Studio** (`WaveARwaStudio`), 1-click public RPC presets (`rpc-testnet.kovanica.online/rpc`), and cross-subdomain Ecosystem Switcher.
+
+## Related Notes
+- [[04 - Wave A-D Protocol Features]]
+- [[06 - Five-Repository Ecosystem]]
+- [[07 - Web Properties & 5-Tab IA]]
+- [[08 - Client Applications & Browser Extension]]

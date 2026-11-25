@@ -1,0 +1,32 @@
+/* Kovanica Protocol Obsidian Theme Snippet — Zinc #09090b + Gold #F2A900 */
+.theme-dark {
+  --background-primary: #09090b;
+  --background-primary-alt: #121214;
+  --background-secondary: #121214;
+  --background-secondary-alt: #1a1a1e;
+  --background-modifier-border: #2a2a30;
+  --text-normal: #f2f1ee;
+  --text-muted: #9a9aa3;
+  --text-faint: #6b6b74;
+  --interactive-accent: #f2a900;
+  --interactive-accent-hover: #ffc02e;
+  --text-accent: #f2a900;
+  --text-accent-hover: #2fbaa4;
+  --tag-color: #f2a900;
+  --tag-background: rgba(242, 169, 0, 0.12);
+}
+
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  color: #f2f1ee;
+  border-bottom: 1px solid #2a2a30;
+  padding-bottom: 0.25em;
+}
+
+.markdown-preview-view h2 {
+  color: #f2a900;
+}
+
+.markdown-preview-view h3 {
+  color: #2fbaa4;
+}
