@@ -1,226 +1,236 @@
 {
   "nodes": [
     {
+      "id": "hero",
+      "type": "text",
+      "x": -340,
+      "y": -920,
+      "width": 720,
+      "height": 210,
+      "color": "3",
+      "text": "# Kovanica Protocol (KVNC)\n**Hybrid PoW + GHOSTDAG Layer-1 · Deterministic Wasmi · Institutional KVP-106 RWA**\n\n| Metric | Live Value |\n| :--- | :--- |\n| **Consensus** | `KovanicaHash` PoW + `GHOSTDAG K=5` · `4s` blocks · **Zero Stake** |\n| **Networks** | Testnet Chain `2` (`2-24cdb5fadd98b207`) Live · Mainnet Chain `1` **1.1.2027** |\n| **Start Here** | [[00 - Kovanica Protocol MOC]] · [[Kovanica Pitch Deck (Slides)]] · [[Kovanica Business & Revenue Map.canvas]] |"
+    },
+    {
       "id": "grp-l1",
       "type": "group",
-      "x": -980,
-      "y": -560,
-      "width": 620,
-      "height": 500,
+      "x": -1080,
+      "y": -620,
+      "width": 660,
+      "height": 470,
       "color": "5",
-      "label": "1 · Layer-1 Core (kovanica-l1 · Rust)"
+      "label": "LAYER 1 · CORE PROTOCOL (kovanica-l1 · RUST)"
+    },
+    {
+      "id": "grp-wave",
+      "type": "group",
+      "x": -320,
+      "y": -620,
+      "width": 680,
+      "height": 470,
+      "color": "4",
+      "label": "LAYER 2 · WASMI RUNTIME, WAVE A-D, DEFI & RWA"
     },
     {
       "id": "grp-sdk",
       "type": "group",
-      "x": -260,
-      "y": -560,
-      "width": 540,
-      "height": 500,
+      "x": 460,
+      "y": -620,
+      "width": 640,
+      "height": 470,
       "color": "6",
-      "label": "2 · Developer Layer (kovanica-sdk v0.9.0 & Playground)"
+      "label": "LAYER 3 · DEVELOPER SDK & PLAYGROUND"
     },
     {
       "id": "grp-web",
       "type": "group",
-      "x": 380,
-      "y": -560,
-      "width": 640,
-      "height": 500,
+      "x": -1080,
+      "y": -40,
+      "width": 720,
+      "height": 460,
       "color": "4",
-      "label": "3 · Public Web & Subdomains (kovanica-web · 37 Routes)"
+      "label": "SURFACE A · PUBLIC WEB PORTAL (kovanica-web · 37 ROUTES)"
     },
     {
       "id": "grp-apps",
       "type": "group",
-      "x": -980,
-      "y": 40,
-      "width": 620,
-      "height": 420,
-      "color": "6",
-      "label": "4 · Client Applications (kovanica-apps)"
-    },
-    {
-      "id": "grp-defi",
-      "type": "group",
       "x": -260,
-      "y": 40,
-      "width": 540,
-      "height": 420,
-      "color": "3",
-      "label": "5 · Wave A-D, DeFi AMM & KVP-106 RWA"
+      "y": -40,
+      "width": 640,
+      "height": 460,
+      "color": "6",
+      "label": "SURFACE B · CLIENT APPS (kovanica-apps)"
     },
     {
       "id": "grp-rev",
       "type": "group",
-      "x": 380,
-      "y": 40,
-      "width": 640,
-      "height": 420,
+      "x": 480,
+      "y": -40,
+      "width": 620,
+      "height": 460,
       "color": "2",
-      "label": "6 · Revenue & Sustainability (/pricing · Zero Cookies)"
+      "label": "SURFACE C · REVENUE, SECURITY & MAINNET"
     },
     {
-      "id": "n-hub",
-      "type": "file",
-      "file": "00 - Kovanica Protocol MOC.md",
-      "x": -180,
-      "y": -820,
-      "width": 380,
-      "height": 180,
-      "color": "3"
-    },
-    {
-      "id": "n-slides",
+      "id": "c-consensus",
       "type": "text",
-      "x": 280,
-      "y": -820,
-      "width": 360,
-      "height": 180,
+      "x": -1050,
+      "y": -565,
+      "width": 290,
+      "height": 185,
+      "color": "5",
+      "text": "### Consensus & DAG\n- Pure **Hybrid PoW + GHOSTDAG**\n- `K=5` · `4s` target · **No Stake**\n- `KovanicaHash` (BLAKE3 + 2 MiB)\n- Non-blue recycle = **0 tx loss**\n\nOpen: [[01 - Consensus & L1 Architecture]]"
+    },
+    {
+      "id": "c-tokenomics",
+      "type": "text",
+      "x": -735,
+      "y": -565,
+      "width": 285,
+      "height": 185,
       "color": "3",
-      "text": "## Kovanica Protocol (KVNC)\n**Hybrid PoW + GHOSTDAG Layer-1**\n- Mainnet Launch: **1.1.2027** (`1-f35df34c92001436`)\n- Live Testnet: **Chain 2** (`2-24cdb5fadd98b207`)\n- Open [[Kovanica Pitch Deck (Slides)]] -> **Start presentation**"
+      "text": "### Frozen Tokenomics\n- `2.5 KVNC` initial subsidy\n- `8,200,000` blocks/era (`3/4` decay)\n- **`3/4` fee burn** · `1/4` miner\n- Wave B EIP-1559 dynamic base fee\n\nOpen: [[02 - Tokenomics & Frozen Emission]]"
     },
     {
-      "id": "n-consensus",
-      "type": "file",
-      "file": "01 - Consensus & L1 Architecture.md",
-      "x": -950,
-      "y": -510,
-      "width": 270,
-      "height": 195,
-      "color": "5"
-    },
-    {
-      "id": "n-tokenomics",
-      "type": "file",
-      "file": "02 - Tokenomics & Frozen Emission.md",
-      "x": -650,
-      "y": -510,
-      "width": 265,
-      "height": 195,
-      "color": "3"
-    },
-    {
-      "id": "n-pro21",
-      "type": "file",
-      "file": "03 - PRO-21 Address & Cryptography.md",
-      "x": -950,
-      "y": -290,
-      "width": 270,
-      "height": 200,
-      "color": "5"
-    },
-    {
-      "id": "n-mining",
-      "type": "file",
-      "file": "10 - Mining Pool & Stratum V1 TLS.md",
-      "x": -650,
-      "y": -290,
-      "width": 265,
-      "height": 200,
-      "color": "5"
-    },
-    {
-      "id": "n-sdk",
-      "type": "file",
-      "file": "09 - Developer SDK & Playground.md",
-      "x": -230,
-      "y": -510,
-      "width": 480,
-      "height": 205,
-      "color": "6"
-    },
-    {
-      "id": "n-repos",
-      "type": "file",
-      "file": "06 - Five-Repository Ecosystem.md",
-      "x": -230,
-      "y": -280,
-      "width": 480,
-      "height": 190,
-      "color": "6"
-    },
-    {
-      "id": "n-web",
-      "type": "file",
-      "file": "07 - Web Properties & 5-Tab IA.md",
-      "x": 410,
-      "y": -510,
-      "width": 580,
-      "height": 215,
-      "color": "4"
-    },
-    {
-      "id": "n-web-tabs",
+      "id": "c-pro21",
       "type": "text",
-      "x": 410,
-      "y": -275,
+      "x": -1050,
+      "y": -355,
+      "width": 290,
+      "height": 180,
+      "color": "5",
+      "text": "### PRO-21 & Crypto\n- `kvnc` + 57 base32 + `dag` (64c)\n- 29-bit BLAKE3 checksum\n- Ed25519 · P-256 · **ML-DSA-65**\n- Legacy hex blocked on Chains 1/2\n\nOpen: [[03 - PRO-21 Address & Cryptography]]"
+    },
+    {
+      "id": "c-mining",
+      "type": "text",
+      "x": -735,
+      "y": -355,
+      "width": 285,
+      "height": 180,
+      "color": "5",
+      "text": "### Stratum V1 TLS Pool\n- Dedicated `/pool` surface\n- Adaptive VarDiff & graceful drain\n- `MinerCommandBuilder` CLI gen\n- `0%` testnet · `1.0%` mainnet\n\nOpen: [[10 - Mining Pool & Stratum V1 TLS]]"
+    },
+    {
+      "id": "c-waves",
+      "type": "text",
+      "x": -290,
+      "y": -565,
+      "width": 620,
+      "height": 185,
+      "color": "3",
+      "text": "### Wave A–D Protocol Capabilities\n- **Wave A:** 1-Tx Atomic Batches (`Deploy+Call`, `Approve+Swap`, `Approve+Liquidity`)\n- **Wave B:** Dynamic Base Fee (`kovanica_getBaseFee`) + Storage Deposit\n- **Wave C:** WebAuthn Passkeys (P-256), Session Keys & On-Chain Scheduler Keeper\n- **Wave D:** BTC / Solana / All-EVM Bridge Registry + Institutional RWA\n\nOpen: [[04 - Wave A-D Protocol Features]]"
+    },
+    {
+      "id": "c-defi",
+      "type": "text",
+      "x": -290,
+      "y": -355,
+      "width": 300,
+      "height": 180,
+      "color": "4",
+      "text": "### Native AMM DEX\n- `/swap`: `x·y=k` + Wave A batch\n- `/pools`: LP + KVP-102 `PoolView`\n- `/wallet/dex` & `/wallet/atomic-swap`\n- Transparent interface fee row\n\nOpen: [[05 - DeFi, AMM & KVP-106 RWA]]"
+    },
+    {
+      "id": "c-rwa",
+      "type": "text",
+      "x": 30,
+      "y": -355,
+      "width": 300,
+      "height": 180,
+      "color": "4",
+      "text": "### Institutional RWA (KVP-106)\n- `/rwa`: Public Asset Registry\n- `/wallet/rwa-issue`: BLAKE3 derive\n- `/wallet/rwa-manage`: Allowlist, freeze & coupon scheduler\n\nOpen: [[05 - DeFi, AMM & KVP-106 RWA]]"
+    },
+    {
+      "id": "c-sdk",
+      "type": "text",
+      "x": 490,
+      "y": -565,
       "width": 580,
       "height": 185,
+      "color": "6",
+      "text": "### `kovanica-sdk v0.9.0` & `kovanica-playground`\n- Browser & Node TS client with `FailoverHttpTransport` & `KovanicaWsClient`\n- 7 Typed Contract Facades (Name, Token, Escrow, HTLC, NFT, Vault, Multisig)\n- 4-Group Developer Studio + `WaveARwaStudio` + 1-click Testnet RPC preset\n\nOpen: [[09 - Developer SDK & Playground]]"
+    },
+    {
+      "id": "c-repos",
+      "type": "text",
+      "x": 490,
+      "y": -355,
+      "width": 580,
+      "height": 180,
+      "color": "6",
+      "text": "### 5-Repository Architecture (`BetterCallDzuks/*`)\n1. `kovanica-l1` (Rust L1) · 2. `kovanica-sdk` (`v0.9.0`)\n3. `kovanica-web` (`kovanica.online`) · 4. `kovanica-apps` (Clients)\n5. `kovanica-playground` (Dev Workbench)\n*Strict PR-only workflow + CI policy gate across all 5 repos*\n\nOpen: [[06 - Five-Repository Ecosystem]]"
+    },
+    {
+      "id": "c-web-tabs",
+      "type": "text",
+      "x": -1050,
+      "y": 15,
+      "width": 660,
+      "height": 215,
       "color": "4",
-      "text": "### 5 Pure Function Tabs (`Shell` + `HomeTestnet`)\n- **Explore**: Explorer, Network, Mining Pool (`/pool`), Origins Map, Dashboard, Roadmap\n- **Trade**: Swap (`/swap`), Liquidity Pools (`/pools`), Orderbook DEX, Atomic Swaps\n- **Assets**: RWA Registry (`/rwa`), Issue RWA, Manage RWA, Multi-Asset, Native NFTs, Token Listings\n- **Wallet**: Wallet, Faucet, Airdrops, CoinJoin, Ecosystem Tools\n- **Build**: Multisig, HTLC, Vaults, Stealth, Docs, API Reference, Playground, Pricing & Services"
+      "text": "### 5 Standardized Pure Function Tabs (`Shell` + `HomeTestnet`)\n- **Explore:** Explorer (8 tabs), Network, Mining Pool (`/pool`), Origins Map, Dashboard, Roadmap\n- **Trade:** Swap (`/swap`), Liquidity Pools (`/pools`), Orderbook DEX, Atomic Swaps\n- **Assets:** RWA Registry (`/rwa`), Issue RWA, Manage RWA, Multi-Asset, Native NFTs, Token Listings\n- **Wallet:** Wallet, Faucet, Airdrops, CoinJoin, Ecosystem Tools\n- **Build:** Multisig, HTLC, Vaults, Stealth, Docs, API Reference, Playground, Pricing & Services\n\nOpen: [[07 - Web Properties & 5-Tab IA]]"
     },
     {
-      "id": "n-apps",
-      "type": "file",
-      "file": "08 - Client Applications & Browser Extension.md",
-      "x": -950,
-      "y": 95,
+      "id": "c-subdomains",
+      "type": "text",
+      "x": -1050,
+      "y": 250,
+      "width": 660,
+      "height": 145,
+      "color": "4",
+      "text": "### Live Subdomains & Zero-Cookie Guarantee\n- `kovanica.online` · `testnet.kovanica.online` · `docs.kovanica.online`\n- `playground.kovanica.online` · `dash.kovanica.online` · `rpc-testnet.kovanica.online/rpc`\n- Cross-subdomain **Ecosystem Switcher** · Dark Zinc `#09090b` + Gold `#F2A900` · **0 tracking cookies**"
+    },
+    {
+      "id": "c-apps-web",
+      "type": "text",
+      "x": -230,
+      "y": 15,
+      "width": 580,
+      "height": 185,
+      "color": "6",
+      "text": "### Web Wallet & MV3 Browser Extension\n- **`wallet-web`:** Failover RPC, finality watcher, 3-sub-tab Contracts workspace, air-gap `kvnc-tx:v1:` envelopes\n- **`browser-extension`:** Chrome/Brave/Firefox MV3 popup + **`window.kovanica`** provider + Wave A batch signing\n\nOpen: [[08 - Client Applications & Browser Extension]]"
+    },
+    {
+      "id": "c-apps-native",
+      "type": "text",
+      "x": -230,
+      "y": 220,
+      "width": 580,
+      "height": 175,
+      "color": "6",
+      "text": "### Desktop & Mobile Clients\n- **`console-desktop` (Tauri):** Operator node inspector & batch RPC health\n- **`node-desktop` (Linux `.deb`):** External `kovanica-node` supervisor & Stratum alarms\n- **`android*` & `ios` (UniFFI):** Light wallet, `BatchTokenDeployHelper` & full-node PoC"
+    },
+    {
+      "id": "c-rev",
+      "type": "text",
+      "x": 510,
+      "y": 15,
       "width": 560,
-      "height": 335,
-      "color": "6"
+      "height": 195,
+      "color": "2",
+      "text": "### 6 Non-Token Revenue Streams (`/pricing`)\n1. **Managed RPC / WS / Indexer SaaS** (`$49–$249/mo`)\n2. **RWA Issuer & Compliance SaaS** (`$299–$999/mo`)\n3. **Swap Interface Fee** (`0%` testnet · configurable mainnet)\n4. **Official Mining Pool Fee** (`1.0%` planned mainnet)\n5. **Verified Listings & Zero-Cookie Sponsors** · 6. **Enterprise Support**\n\nOpen: [[11 - Revenue & Non-Token Monetization]] · [[Kovanica Business & Revenue Map.canvas]]"
     },
     {
-      "id": "n-wave",
-      "type": "file",
-      "file": "04 - Wave A-D Protocol Features.md",
-      "x": -230,
-      "y": 95,
-      "width": 480,
-      "height": 155,
-      "color": "3"
-    },
-    {
-      "id": "n-defi",
-      "type": "file",
-      "file": "05 - DeFi, AMM & KVP-106 RWA.md",
-      "x": -230,
-      "y": 270,
-      "width": 480,
-      "height": 160,
-      "color": "4"
-    },
-    {
-      "id": "n-rev",
-      "type": "file",
-      "file": "11 - Revenue & Non-Token Monetization.md",
-      "x": 410,
-      "y": 95,
-      "width": 580,
+      "id": "c-sec",
+      "type": "text",
+      "x": 510,
+      "y": 230,
+      "width": 560,
       "height": 165,
-      "color": "2"
-    },
-    {
-      "id": "n-sec",
-      "type": "file",
-      "file": "12 - Security, Audit & Mainnet 1.1.2027.md",
-      "x": 410,
-      "y": 280,
-      "width": 580,
-      "height": 150,
-      "color": "1"
+      "color": "1",
+      "text": "### Security, Audit Freeze & Mainnet `1.1.2027`\n- `kovanica-l1` consensus audit-frozen (`v1.0.0-mainnet` RC)\n- Strict Chain 1 / Chain 2 isolation (never falls back to testnet)\n- Per-request CSP nonces, HSTS, zero secrets committed\n\nOpen: [[12 - Security, Audit & Mainnet 1.1.2027]]"
     }
   ],
   "edges": [
-    { "id": "e1", "fromNode": "n-hub", "fromSide": "bottom", "toNode": "grp-l1", "toSide": "top", "label": "Consensus" },
-    { "id": "e2", "fromNode": "n-hub", "fromSide": "bottom", "toNode": "grp-sdk", "toSide": "top", "label": "SDK v0.9.0" },
-    { "id": "e3", "fromNode": "n-hub", "fromSide": "bottom", "toNode": "grp-web", "toSide": "top", "label": "kovanica.online" },
-    { "id": "e4", "fromNode": "grp-l1", "fromSide": "right", "toNode": "grp-sdk", "toSide": "left", "label": "JSON-RPC 2.0 / WS" },
-    { "id": "e5", "fromNode": "grp-sdk", "fromSide": "right", "toNode": "grp-web", "toSide": "left", "label": "WASM + RPC Proxy" },
-    { "id": "e6", "fromNode": "grp-sdk", "fromSide": "bottom", "toNode": "grp-apps", "toSide": "top", "label": "Client Facades" },
-    { "id": "e7", "fromNode": "grp-l1", "fromSide": "bottom", "toNode": "grp-defi", "toSide": "left", "label": "Wasmi Runtime" },
-    { "id": "e8", "fromNode": "grp-defi", "fromSide": "right", "toNode": "grp-web", "toSide": "bottom", "label": "/swap · /pools · /rwa" },
-    { "id": "e9", "fromNode": "grp-web", "fromSide": "bottom", "toNode": "grp-rev", "toSide": "top", "label": "/pricing · /api/inquiries" },
-    { "id": "e10", "fromNode": "n-mining", "fromSide": "right", "toNode": "n-rev", "toSide": "left", "label": "Pool Fee (1.0% Mainnet)" }
+    { "id": "e1", "fromNode": "hero", "fromSide": "bottom", "toNode": "grp-l1", "toSide": "top", "color": "5", "label": "PoW + GHOSTDAG" },
+    { "id": "e2", "fromNode": "hero", "fromSide": "bottom", "toNode": "grp-wave", "toSide": "top", "color": "4", "label": "Wasmi + Wave A–D" },
+    { "id": "e3", "fromNode": "hero", "fromSide": "bottom", "toNode": "grp-sdk", "toSide": "top", "color": "6", "label": "SDK v0.9.0" },
+    { "id": "e4", "fromNode": "grp-l1", "fromSide": "right", "toNode": "grp-wave", "toSide": "left", "color": "5", "label": "State & Execution" },
+    { "id": "e5", "fromNode": "grp-wave", "fromSide": "right", "toNode": "grp-sdk", "toSide": "left", "color": "4", "label": "Typed Facades & RPC" },
+    { "id": "e6", "fromNode": "grp-l1", "fromSide": "bottom", "toNode": "grp-web", "toSide": "top", "color": "4", "label": "RPC / Stratum / Faucet" },
+    { "id": "e7", "fromNode": "grp-wave", "fromSide": "bottom", "toNode": "grp-apps", "toSide": "top", "color": "6", "label": "window.kovanica + Wallet" },
+    { "id": "e8", "fromNode": "grp-sdk", "fromSide": "bottom", "toNode": "grp-rev", "toSide": "top", "color": "2", "label": "SaaS & Enterprise" },
+    { "id": "e9", "fromNode": "grp-web", "fromSide": "right", "toNode": "grp-apps", "toSide": "left", "color": "4", "label": "Ecosystem Switcher" },
+    { "id": "e10", "fromNode": "grp-apps", "fromSide": "right", "toNode": "grp-rev", "toSide": "left", "color": "2", "label": "Swap / RWA / API Intake" }
   ]
 }

@@ -1,14 +1,15 @@
 # Kovanica-Vault
 
-Interactive **Obsidian Vault** presentation of the **Kovanica Protocol (KVNC)** — Hybrid PoW + GHOSTDAG Layer-1 blockchain, deterministic Wasmi smart contracts, Wave A–D DeFi/RWA suite, five-repository ecosystem, and non-token services architecture.
+Interactive **Obsidian Vault** presentation of the **Kovanica Protocol (KVNC)** — designed with Kovanica's dark zinc (`#09090b`) & gold (`#F2A900`) visual DNA.
 
-## What's Inside
+## Highlights
 
-- **`00 - Kovanica Protocol MOC.md`** — Master Map of Content and entry hub.
-- **`Kovanica Architecture & Ecosystem.canvas`** — Interactive JSON Canvas board with 6 color-coded groups, live embedded notes, and value/data-flow arrows.
+- **`00 - Kovanica Protocol MOC.md`** — Multi-column **Executive Dashboard** (`cssclasses: [dashboard]`) with KPI cards, 3-column navigation grid, and live system diagram.
+- **`Kovanica Architecture & Ecosystem.canvas`** — 3-tier layered Architecture Canvas (6 color-coded groups, clean summary cards, and directed data/value edges).
+- **`Kovanica Business & Revenue Map.canvas`** — Dedicated Business & Revenue Canvas mapping all 6 non-token revenue streams into live `POST /api/inquiries` intake.
 - **`Kovanica Pitch Deck (Slides).md`** — 12-slide native Obsidian presentation deck (`Ctrl+P` → `Slides: Start presentation`).
-- **Pre-Configured Color Bubble Graph (`.obsidian/graph.json`)** — Press `Ctrl+G` in Obsidian for a color-coded constellation across all 14 linked notes (83 WikiLinks, 0 broken).
-- **Kovanica Dark Theme Snippet (`.obsidian/snippets/kovanica-theme.css`)** — Matches Kovanica's zinc (`#09090b`) + gold (`#F2A900`) design DNA.
+- **Pre-Configured Color Bubble Graph (`.obsidian/graph.json`)** — Press `Ctrl+G` in Obsidian for a color-coded constellation across all 14 linked notes.
+- **Custom Kovanica CSS Theme (`.obsidian/snippets/kovanica-theme.css`)** — Styled Fraunces headings, KPI cards, tables, callouts, canvas shadows, and slide polish.
 
 ## How to Open
 
@@ -16,4 +17,4 @@ Interactive **Obsidian Vault** presentation of the **Kovanica Protocol (KVNC)** 
 git clone https://github.com/BetterCallDzuks/Kovanica-Vault.git
 ```
 
-In **Obsidian**, select **Open folder as vault** and choose the cloned `Kovanica-Vault` directory.
+In **Obsidian**, select **Open folder as vault** and choose the `Kovanica-Vault` directory.

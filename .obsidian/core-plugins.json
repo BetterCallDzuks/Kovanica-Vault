@@ -19,5 +19,15 @@
   "daily-notes": false,
   "templates": false,
   "note-composer": true,
-  "word-count": true
+  "word-count": true,
+  "footnotes": false,
+  "slash-command": false,
+  "editor-status": true,
+  "audio-recorder": false,
+  "workspaces": false,
+  "file-recovery": true,
+  "publish": false,
+  "sync": true,
+  "bases": true,
+  "webviewer": false
 }

@@ -1,8 +1,10 @@
 ---
-title: Kovanica Protocol — Master Presentation Hub
+title: Kovanica Protocol — Executive Dashboard
 aliases:
   - Kovanica MOC
   - Home
+cssclasses:
+  - dashboard
 tags:
   - hub
   - kovanica
@@ -12,61 +14,94 @@ mainnet_launch: 2027-01-01
 sdk_version: 0.9.0
 ---
 
-# Kovanica Protocol (KVNC) — Master Presentation Hub
+# Kovanica Protocol (KVNC)
 
-> [!IMPORTANT] Three Ways to Explore This Vault
-> 1. **Interactive Board (Canvas):** Open [[Kovanica Architecture & Ecosystem.canvas]] for the visual architecture map with embedded live notes and value-flow arrows.
-> 2. **Bubble Graph (Graph View):** Press `Ctrl+G` (or click **Open graph view**) — pre-configured in `.obsidian/graph.json` with Kovanica brand colors (Gold = Hub/Tokenomics, Blue = L1/Consensus/Mining, Teal = DeFi/RWA, Purple = Apps/SDK/Playground, Emerald = Web/Revenue, Coral = Security/Roadmap).
-> 3. **Slide Deck Presentation:** Open [[Kovanica Pitch Deck (Slides)]] and run **Slides: Start presentation** (`Ctrl+P` → `Slides`).
+> [!IMPORTANT] Start Exploring in 3 Views
+> - **Architecture Canvas:** [[Kovanica Architecture & Ecosystem.canvas]] · **Revenue Canvas:** [[Kovanica Business & Revenue Map.canvas]]
+> - **Color Bubble Graph:** Press `Ctrl+G` (pre-configured with Kovanica Gold / Teal / Blue / Purple / Emerald / Coral clusters)
+> - **Pitch Deck Slides:** Open [[Kovanica Pitch Deck (Slides)]] → `Ctrl+P` → **Slides: Start presentation**
 
----
-
-## Executive Snapshot
-
-| Dimension | Canonical Value |
-| :--- | :--- |
-| **Protocol** | **Kovanica (KVNC)** — from-scratch Rust Layer-1 |
-| **Consensus** | **Hybrid PoW + GHOSTDAG** (`KovanicaHash`, `K=5`, `4s` target block time, **zero stake on consensus**) |
-| **Smart Contracts** | Deterministic **Wasmi** WebAssembly runtime |
-| **Address Standard** | **PRO-21** (`kvnc` + 57 base32 chars + `dag`, 64 chars, 29-bit BLAKE3 checksum) |
-| **Live Testnet** | Chain ID `2` · Tag `2-24cdb5fadd98b207` · `https://testnet.kovanica.online` |
-| **Mainnet Launch** | Chain ID `1` · Tag `1-f35df34c92001436` · **1.1.2027** (audit-frozen RC) |
-| **TypeScript SDK** | `kovanica-sdk v0.9.0` |
-| **Public Web Hub** | `https://kovanica.online` (37 routes, 5 pure function tabs, zero tracking cookies) |
-
----
-
-## Knowledge Graph Map
-
-### 1. Core Layer-1 Protocol
-- [[01 - Consensus & L1 Architecture]] — Hybrid PoW + GHOSTDAG (`K=5`, `4s`), Wasmi runtime, 2–4 GB VPS footprint
-- [[02 - Tokenomics & Frozen Emission]] — `2.5 KVNC` initial subsidy, `8,200,000` blocks/era, `3/4` geometric decay, `3/4` fee burn
-- [[03 - PRO-21 Address & Cryptography]] — Ed25519 + 29-bit BLAKE3, P-256 passkeys, ML-DSA-65 post-quantum verification
-- [[10 - Mining Pool & Stratum V1 TLS]] — Encrypted Stratum V1 TLS, VarDiff, graceful drain, `MinerCommandBuilder`
-
-### 2. Application Layer (Wave A–D, DeFi & RWA)
-- [[04 - Wave A-D Protocol Features]] — Atomic 1-tx batches, EIP-1559 base fee, WebAuthn passkeys, scheduler, BTC/Solana/EVM bridge
-- [[05 - DeFi, AMM & KVP-106 RWA]] — Native AMM `/swap` & `/pools`, KVP-106 RWA Registry `/rwa`, `/wallet/rwa-issue`, `/wallet/rwa-manage`
-
-### 3. Five-Repository Ecosystem & Surfaces
-- [[06 - Five-Repository Ecosystem]] — `kovanica-l1`, `kovanica-sdk`, `kovanica-web`, `kovanica-apps`, `kovanica-playground`
-- [[07 - Web Properties & 5-Tab IA]] — `Explore · Trade · Assets · Wallet · Build`, 37 routes, cross-subdomain Ecosystem Switcher
-- [[08 - Client Applications & Browser Extension]] — `wallet-web`, MV3 `browser-extension` (`window.kovanica`), `console-desktop`, `node-desktop`, Android & iOS
-- [[09 - Developer SDK & Playground]] — `kovanica-sdk v0.9.0`, failover RPC/WS, 4-group developer console
-
-### 4. Business, Revenue & Mainnet Governance
-- [[11 - Revenue & Non-Token Monetization]] — 6 non-token revenue streams live on `/pricing` + `POST /api/inquiries` (zero tracking cookies)
-- [[12 - Security, Audit & Mainnet 1.1.2027]] — Audit-freeze discipline, PR-only workflow, Chain ID isolation, launch checklist
+<div class="kovanica-kpi-grid">
+  <div class="kovanica-kpi blue">
+    <div class="kovanica-kpi-label">Consensus</div>
+    <div class="kovanica-kpi-value">4s · K=5</div>
+    <div class="kovanica-kpi-sub">Hybrid PoW + GHOSTDAG · 0% Stake</div>
+  </div>
+  <div class="kovanica-kpi">
+    <div class="kovanica-kpi-label">Frozen Emission</div>
+    <div class="kovanica-kpi-value">2.5 KVNC</div>
+    <div class="kovanica-kpi-sub">8.2M blocks/era · 3/4 burn split</div>
+  </div>
+  <div class="kovanica-kpi teal">
+    <div class="kovanica-kpi-label">Live Web Portal</div>
+    <div class="kovanica-kpi-value">37 Routes</div>
+    <div class="kovanica-kpi-sub">5 Pure Function Tabs · 0 Cookies</div>
+  </div>
+  <div class="kovanica-kpi">
+    <div class="kovanica-kpi-label">Mainnet Genesis</div>
+    <div class="kovanica-kpi-value">1.1.2027</div>
+    <div class="kovanica-kpi-sub">Chain 1 · 1-f35df34c92001436</div>
+  </div>
+</div>
 
 ---
 
-## Live Ecosystem Links
+## Ecosystem Map
 
-- **Apex Landing:** [kovanica.online](https://kovanica.online)
-- **Testnet Portal:** [testnet.kovanica.online](https://testnet.kovanica.online)
-- **Documentation:** [docs.kovanica.online](https://docs.kovanica.online)
-- **Built-in Playground:** [playground.kovanica.online](https://playground.kovanica.online)
-- **Dashboard:** [dash.kovanica.online](https://dash.kovanica.online)
-- **Pricing & Services:** [testnet.kovanica.online/pricing](https://testnet.kovanica.online/pricing)
-- **Public Testnet RPC:** `https://rpc-testnet.kovanica.online/rpc`
-- **GitHub Organization:** [github.com/BetterCallDzuks](https://github.com/BetterCallDzuks)
+<div class="kovanica-card-grid">
+  <div class="kovanica-card">
+    <h3>1 · Core Layer-1 (Rust)</h3>
+    <ul>
+      <li>[[01 - Consensus & L1 Architecture]] — Hybrid PoW + GHOSTDAG & Wasmi</li>
+      <li>[[02 - Tokenomics & Frozen Emission]] — Subsidy eras & 3/4 fee burn</li>
+      <li>[[03 - PRO-21 Address & Cryptography]] — Ed25519, P-256 & ML-DSA-65</li>
+      <li>[[10 - Mining Pool & Stratum V1 TLS]] — Encrypted mining & CLI builder</li>
+    </ul>
+  </div>
+  <div class="kovanica-card">
+    <h3>2 · DeFi, RWA & Client Apps</h3>
+    <ul>
+      <li>[[04 - Wave A-D Protocol Features]] — Batches, EIP-1559, Passkeys, Bridge</li>
+      <li>[[05 - DeFi, AMM & KVP-106 RWA]] — /swap, /pools, /rwa & compliance</li>
+      <li>[[08 - Client Applications & Browser Extension]] — wallet-web, MV3, Desktop, Mobile</li>
+      <li>[[09 - Developer SDK & Playground]] — kovanica-sdk v0.9.0 & 4-group studio</li>
+    </ul>
+  </div>
+  <div class="kovanica-card">
+    <h3>3 · Web, Revenue & Mainnet</h3>
+    <ul>
+      <li>[[06 - Five-Repository Ecosystem]] — BetterCallDzuks/* architecture</li>
+      <li>[[07 - Web Properties & 5-Tab IA]] — kovanica.online & 5 function tabs</li>
+      <li>[[11 - Revenue & Non-Token Monetization]] — 6 streams live on /pricing</li>
+      <li>[[12 - Security, Audit & Mainnet 1.1.2027]] — Audit freeze & chain isolation</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Live Architecture Overview
+
+```mermaid
+flowchart LR
+    L1["kovanica-l1\nHybrid PoW + GHOSTDAG\nWasmi Runtime"] -->|"JSON-RPC 2.0 / WS"| SDK["kovanica-sdk v0.9.0"]
+    SDK --> WEB["kovanica-web\n37 Routes · 5 Tabs"]
+    SDK --> APPS["kovanica-apps\nwallet-web · MV3 · Desktop · Mobile"]
+    SDK --> PG["kovanica-playground\n4-Group Dev Studio"]
+    WEB --> REV["/pricing\n6 Non-Token Revenue Streams"]
+```
+
+---
+
+## Live Production Endpoints
+
+| Surface | URL | Status |
+| :--- | :--- | :--- |
+| **Apex Landing** | [kovanica.online](https://kovanica.online) | Live `200` |
+| **Testnet Portal** | [testnet.kovanica.online](https://testnet.kovanica.online) | Live `200` |
+| **Documentation** | [docs.kovanica.online](https://docs.kovanica.online) | Live `200` |
+| **Built-in Playground** | [playground.kovanica.online](https://playground.kovanica.online) | Live `200` |
+| **Dashboard** | [dash.kovanica.online](https://dash.kovanica.online) | Live `200` |
+| **Pricing & Services** | [testnet.kovanica.online/pricing](https://testnet.kovanica.online/pricing) | Live `200` |
+| **Public Testnet RPC** | `https://rpc-testnet.kovanica.online/rpc` | Live `200` (Chain `2`) |
+| **GitHub Organization** | [github.com/BetterCallDzuks](https://github.com/BetterCallDzuks) | 6 Public Repos |
