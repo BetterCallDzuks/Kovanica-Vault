@@ -27,11 +27,11 @@ Back to [[00 - Kovanica Protocol MOC]] · See [[Kovanica Architecture & Ecosyste
 
 A single-source-of-truth `NAV_GROUPS` in `Shell` (shared with `HomeTestnet` and the Mobile More sheet) keeps every route ≤ 2 clicks away with zero duplicate labels:
 
-1. **Explore:** `Explorer` (left-to-right multi-lane BlockDAG card graph with plain-English colour legend, directional merge/fork arrows & hover tooltips), `Network`, `Mining Pool` (`/pool`), `Origins Map`, `Dashboard`, `Roadmap`
-2. **Trade:** `Swap` (`/swap`), `Liquidity Pools` (`/pools`), `Orderbook DEX`, `Atomic Swaps`
+1. **Explore:** `Explorer` (left-to-right multi-lane BlockDAG card graph with plain-English colour legend, directional merge/fork arrows, hover tooltips & collapsed-by-default Live Mining/DAG Telemetry drawers), `Network`, `Mining Pool` (`/pool`), `Origins Map`, `Dashboard`, `Roadmap`
+2. **Trade:** `Swap` (`/swap`, end-to-end client-signed AMM swaps with official KVNC/KSMOKE artwork), `Liquidity Pools` (`/pools`, client-signed pool init/liquidity + wallet watchlist), `Orderbook DEX`, `Atomic Swaps`
 3. **Assets:** `RWA Registry` (`/rwa`), `Issue RWA` (client-signed KVP-106 issuance + inline JSON fallback), `Manage RWA`, `Multi-Asset` (end-to-end KVP-102 Create Token + balances/transfers), `Native NFTs` (end-to-end KVP-106 Create Collection & Mint NFT), `Token Listings`
 4. **Wallet:** `Wallet`, `Faucet`, `Airdrops`, `CoinJoin`, `Ecosystem Tools`
-5. **Build:** `Multisig`, `HTLC`, `Vaults`, `Stealth`, `Docs`, `API Reference`, `Playground`, `Pricing & Services` (`/pricing`), `Privacy Policy` (`/privacy`)
+5. **Build:** `Multisig`, `HTLC`, `Vaults`, `Stealth` (KVP-103 dual-key Ed25519 ECDH stealth addresses), `Docs`, `API Reference`, `Playground`, `Pricing & Services` (`/pricing`), `Privacy Policy` (`/privacy`)
 
 > [!TIP] Design Preservation
 > Every surface preserves Kovanica's dark zinc (`#09090b`), surface (`#121214` / `#1a1a1e`), gold (`#F2A900`), teal (`#2fbaa4`), blue (`#8aa0b4`), and `Fraunces` / `IBM Plex Sans` / `IBM Plex Mono` typography.

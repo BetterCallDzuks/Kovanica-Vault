@@ -27,6 +27,7 @@ kvnc + 57 base32 characters + dag
 2. **P-256 (WebAuthn Passkeys)** — Hardware-backed browser/mobile passkey verification (Wave C).
 3. **ML-DSA-65** — Real post-quantum signature verification built into `kovanica-l1`.
 4. **BLAKE3** — Address checksums, KVP-106 deterministic RWA asset IDs (`kvp106:rwa:v1`), and air-gap envelopes (`kvnc-tx:v1:`).
+5. **KVP-103 Dual-Key Ed25519 ECDH Stealth Addresses** — Dual spend/view keypair meta-addresses, ephemeral ECDH one-time stealth address derivation, view-tag scanning, and one-time spend key recovery (live in `kovanica-web` PR #52).
 
 ## Related Notes
 - [[01 - Consensus & L1 Architecture]]

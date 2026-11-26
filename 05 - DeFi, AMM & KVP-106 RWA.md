@@ -11,8 +11,8 @@ Back to [[00 - Kovanica Protocol MOC]]
 
 ## Native AMM DEX (`Trade` Tab)
 
-- **AMM Swap (`/swap`):** Constant-product `x·y=k` swaps with slippage presets, Wave A 1-tx atomic `Approve → Swap` batches, live Wave B base-fee telemetry, and transparent interface-fee breakdown (`0.00%` on testnet; configurable via `VITE_SWAP_INTERFACE_FEE_BPS`).
-- **AMM Liquidity Pools (`/pools`):** Wave A 1-tx `Add Liquidity`, LP share burn/withdrawal, **plus** the on-chain KVP-102 `PoolView` explorer & exact quote calculator (cleanly separated from Stratum Mining Pool `/pool`).
+- **AMM Swap (`/swap`):** End-to-end client-signed constant-product `x·y=k` swaps with slippage presets, Wave A 1-tx atomic `Approve → Swap` batches, official KVNC/KSMOKE token artwork, live Wave B base-fee telemetry, and transparent interface-fee breakdown (`0.00%` on testnet; configurable via `VITE_SWAP_INTERFACE_FEE_BPS`).
+- **AMM Liquidity Pools (`/pools`):** End-to-end client-signed pool initialization, Wave A 1-tx `Add Liquidity`, LP share burn/withdrawal, wallet token watchlist sync, **plus** the on-chain KVP-102 `PoolView` explorer & exact quote calculator (cleanly separated from Stratum Mining Pool `/pool`).
 - **Orderbook DEX (`/wallet/dex`) & Atomic Swaps (`/wallet/atomic-swap`):** Reachable in 1 click from the **Trade** tab and contextual Trade sub-nav strip.
 
 ## KVP-102 Tokens, Native NFTs & Institutional KVP-106 RWA (`Assets` Tab)
