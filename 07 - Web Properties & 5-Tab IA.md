@@ -27,11 +27,14 @@ Back to [[00 - Kovanica Protocol MOC]] · See [[Kovanica Architecture & Ecosyste
 
 A single-source-of-truth `NAV_GROUPS` in `Shell` (shared with `HomeTestnet` and the Mobile More sheet) keeps every route ≤ 2 clicks away with zero duplicate labels:
 
-1. **Explore:** `Explorer` (left-to-right multi-lane BlockDAG card graph with plain-English colour legend, directional merge/fork arrows, hover tooltips & collapsed-by-default Live Mining/DAG Telemetry drawers), `Network`, `Mining Pool` (`/pool`), `Origins Map`, `Dashboard`, `Roadmap`
-2. **Trade:** `Swap` (`/swap`, end-to-end client-signed AMM swaps with official KVNC/KSMOKE artwork), `Liquidity Pools` (`/pools`, client-signed pool init/liquidity + wallet watchlist), `Orderbook DEX`, `Atomic Swaps`
+1. **Explore:** `Explorer` (left-to-right multi-lane BlockDAG card graph, `Stealth (KVP-103)` tx badges & collapsed-by-default Live Mining/DAG Telemetry drawers), `Network`, `Mining Pool` (`/pool`), `Origins Map`, `Dashboard`, `Roadmap`
+2. **Trade:** `Swap` (`/swap`, end-to-end client-signed AMM swaps, price-impact warnings, Pool Stats & optimized KVNC/KSMOKE artwork), `Liquidity Pools` (`/pools`, client-signed pool init, LP positions & 1-click Remove Liquidity), `Orderbook DEX`, `Atomic Swaps`
 3. **Assets:** `RWA Registry` (`/rwa`), `Issue RWA` (client-signed KVP-106 issuance + inline JSON fallback), `Manage RWA`, `Multi-Asset` (end-to-end KVP-102 Create Token + balances/transfers), `Native NFTs` (end-to-end KVP-106 Create Collection & Mint NFT), `Token Listings`
 4. **Wallet:** `Wallet`, `Faucet`, `Airdrops`, `CoinJoin`, `Ecosystem Tools`
-5. **Build:** `Multisig`, `HTLC`, `Vaults`, `Stealth` (KVP-103 dual-key Ed25519 ECDH stealth addresses), `Docs`, `API Reference`, `Playground`, `Pricing & Services` (`/pricing`), `Privacy Policy` (`/privacy`)
+5. **Build:** `Multisig`, `HTLC`, `Vaults`, `Stealth` (KVP-103 dual-key Ed25519 ECDH stealth addresses + 1-click `window.kovanica` extension import & on-chain auto-feed), `Docs`, `API Reference`, `Playground`, `Pricing & Services` (`/pricing`), `Privacy Policy` (`/privacy`)
+
+> [!NOTE] UX & Ops Hardening (`kovanica-web` PRs #53–#56, Live on `seed1`)
+> Apex landing (`kovanica.online`) features a streamlined 3-CTA Hero, curated 3×2 flagship grid, and `-95.1%` optimized `?v=2` coin icons; `testnet.kovanica.online` adds a 3-Step Quick Start and `Popular` / category filter tabs. Pre-Mainnet ops include `ops/nginx/rpc.kovanica.online.conf.example` and `scripts/synthetic-health-probe.mjs`.
 
 > [!TIP] Design Preservation
 > Every surface preserves Kovanica's dark zinc (`#09090b`), surface (`#121214` / `#1a1a1e`), gold (`#F2A900`), teal (`#2fbaa4`), blue (`#8aa0b4`), and `Fraunces` / `IBM Plex Sans` / `IBM Plex Mono` typography.

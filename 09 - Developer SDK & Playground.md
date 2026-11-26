@@ -17,7 +17,7 @@ Back to [[00 - Kovanica Protocol MOC]]
 - Browser & Node.js (18/20/22) TypeScript client with `FailoverHttpTransport` and `KovanicaWsClient` (`newHeads`, `newCommittedLeader`, backpressure-capped block+receipt streaming).
 - **KVP-103 Dual-Key Ed25519 Stealth Addresses** (`src/stealth.ts`): meta-address codec, deterministic mnemonic derivation, sender one-time derivation, watch-only view-tag scanner, one-time spend key recovery & RFC 8032 scalar signing.
 - Typed contract facades across all canonical families (`NameRegistryClient`, `TokenClient`, `EscrowClient`, `HtlcClient`, `NftClient`, `VaultClient`, `MultisigClient`, `AmmClient`, `RwaClient`).
-- Offline PRO-21 address validation, universal raw wire tx codec, storage-slot derivers, and air-gap `kvnc-tx:v1:` envelopes.
+- Offline PRO-21 address validation, universal raw wire tx codec, storage-slot derivers, air-gap `kvnc-tx:v1:` envelopes, runnable `examples/` kit (`01`–`05`), and automated npm OIDC `--provenance` publish workflow (`.github/workflows/publish.yml`).
 
 ## `kovanica-playground`
 A read-only developer console and interactive studio (zero private key custody) organized into **4 clean sub-tabs**:
